@@ -1,0 +1,77 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "_mixins.scss";
+@import "_animate.scss";
+
+
+@media screen and (max-width: 413px){
+  html{
+    font-size: 54px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 414px){
+  html{
+    font-size: 60px;
+  }
+}
+body{
+  font-family: sans-serif;
+  color: #1e1e1e;
+  font-size: 0.28rem;
+  line-height: 1.5;
+}
+
+strong{
+  font-weight: bold;
+}
+img{
+  width: 100%;
+}
+.show{
+  display: block !important;
+}
+.hide{
+  display: none !important;
+}
+//for history page
+.title{
+  font-size: 0.4rem;
+  background: #cdc7bf;
+  color: #fff;
+  text-align: center;
+  padding: 0.1rem 0;
+}
+.content{
+  padding: 0.28rem;
+  .item-list{
+    margin-bottom: 0.28rem;
+  }
+}
+.item-list{
+  .time{
+    color: #887549;
+    font-size: 0.28rem;
+  }
+}
+
+//for collection page
+.content-collection{
+  img{
+    display: block;
+    margin-bottom: 0.1rem;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+//test
+#__bs_notify__{
+  display: none !important;
+}
