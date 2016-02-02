@@ -89,6 +89,30 @@ img{
   }
 }
 
+//for inspiration-1
+.inspiration{
+  position: relative;
+  .des{
+    position: absolute;
+    z-index: 2;
+  }
+  &.inspiration-1{
+    .des{
+      color: #fff;
+      @include size(92%,auto);
+      left: 4%;
+      bottom: 4%;
+    }
+  }
+  &.inspiration-2{
+    .des{
+      color: #000;
+      @include size(92%,auto);
+      left: 4%;
+      top: 1%;
+    }
+  }
+}
 
 //test
 #__bs_notify__{

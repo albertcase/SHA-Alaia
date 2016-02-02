@@ -141,6 +141,28 @@ img {
   background-size: 100%;
 }
 
+.inspiration {
+  position: relative;
+}
+.inspiration .des {
+  position: absolute;
+  z-index: 2;
+}
+.inspiration.inspiration-1 .des {
+  color: #fff;
+  width: 92%;
+  height: auto;
+  left: 4%;
+  bottom: 4%;
+}
+.inspiration.inspiration-2 .des {
+  color: #000;
+  width: 92%;
+  height: auto;
+  left: 4%;
+  top: 1%;
+}
+
 #__bs_notify__ {
   display: none !important;
 }
