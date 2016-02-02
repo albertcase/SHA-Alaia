@@ -95,6 +95,10 @@ img {
   display: none !important;
 }
 
+.brown-font {
+  color: #887549;
+}
+
 .title {
   font-size: 0.4rem;
   background: #cdc7bf;
@@ -121,6 +125,20 @@ img {
 }
 .content-collection img:last-child {
   margin-bottom: 0;
+}
+
+.page-fragrance {
+  background: #f2f2f2;
+}
+.page-fragrance .phase-1 {
+  padding: 0.28rem;
+}
+.page-fragrance .name {
+  color: #000;
+}
+.page-fragrance .content {
+  background: url("../img/f-bg.jpg") no-repeat;
+  background-size: 100%;
 }
 
 #__bs_notify__ {

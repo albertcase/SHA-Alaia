@@ -38,6 +38,10 @@ img{
 .hide{
   display: none !important;
 }
+
+.brown-font{
+  color: #887549;
+}
 //for history page
 .title{
   font-size: 0.4rem;
@@ -67,6 +71,21 @@ img{
     &:last-child{
       margin-bottom: 0;
     }
+  }
+}
+
+//for page-fragrance
+.page-fragrance{
+  background: #f2f2f2;
+  .phase-1{
+    padding: 0.28rem;
+  }
+  .name{
+    color: #000;
+  }
+  .content{
+    background: url("../img/f-bg.jpg") no-repeat;
+    background-size: 100%;
   }
 }
 
