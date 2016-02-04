@@ -103,6 +103,10 @@ img {
   text-align: justify;
 }
 
+.page-history .wrapper {
+  text-align: left;
+}
+
 .title {
   font-size: 0.4rem;
   background: #cdc7bf;
