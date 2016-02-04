@@ -99,6 +99,10 @@ img {
   color: #887549;
 }
 
+.wrapper {
+  text-align: justify;
+}
+
 .title {
   font-size: 0.4rem;
   background: #cdc7bf;
