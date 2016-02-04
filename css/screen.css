@@ -173,6 +173,19 @@ img {
   top: 1%;
 }
 
+.page-historicalmoments {
+  background: #f2f2f2;
+}
+.page-historicalmoments img {
+  display: block;
+}
+.page-historicalmoments .content {
+  padding: 0;
+}
+.page-historicalmoments .content p {
+  padding: 0.2rem;
+}
+
 #__bs_notify__ {
   display: none !important;
 }

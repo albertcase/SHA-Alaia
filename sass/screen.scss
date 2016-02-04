@@ -126,6 +126,20 @@ img{
   }
 }
 
+//for page-historicalmoments
+.page-historicalmoments{
+  background: #f2f2f2;
+  img{
+    display: block;
+  }
+  .content{
+    padding: 0;
+    p{
+      padding: 0.2rem;
+    }
+  }
+}
+
 //test
 #__bs_notify__{
   display: none !important;
