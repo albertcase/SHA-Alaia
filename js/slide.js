@@ -21,8 +21,8 @@ $(document).ready(function(){
     });
 
     $("#slides-5").slidesjs({
-        width: 789,
-        height: 546
+        width: 790,
+        height: 420
     });
 
     $("#slides-6").slidesjs({
