@@ -142,6 +142,9 @@ img{
 
 //for page-book
 .page-book{
+  img{
+    display: block;
+  }
   .item-book{
     .bottom-bg{
       width: 100%;
@@ -152,6 +155,7 @@ img{
     .brown-font{
       text-align: center;
       padding: 0.3rem;
+      background: #f2f2f2;
     }
   }
 }

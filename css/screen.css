@@ -186,6 +186,9 @@ img {
   padding: 0.2rem;
 }
 
+.page-book img {
+  display: block;
+}
 .page-book .item-book .bottom-bg {
   width: 100%;
   height: 1rem;
@@ -195,6 +198,7 @@ img {
 .page-book .item-book .brown-font {
   text-align: center;
   padding: 0.3rem;
+  background: #f2f2f2;
 }
 
 #__bs_notify__ {
