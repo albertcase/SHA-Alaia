@@ -141,6 +141,16 @@ img {
   background-size: 100%;
 }
 
+.page-legend {
+  background: #fff;
+}
+.page-legend .content {
+  background-color: #f2f2f2;
+}
+.page-legend .l1 {
+  padding: 0.2rem 0.2rem 0.4rem;
+}
+
 .inspiration {
   position: relative;
 }
