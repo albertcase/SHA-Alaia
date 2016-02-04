@@ -161,6 +161,38 @@ img{
 }
 
 
+//for slide js
+.slide{
+  position: relative;
+  .slidesjs-pagination{
+    display: none;
+    .slidesjs-pagination-item{
+
+      a{
+        display: block;
+      }
+    }
+  }
+  .slidesjs-navigation{
+    display: block;
+    position: absolute;
+    @include size(0.3rem,0.3rem);
+    z-index: 100;
+    top: 50%;
+    text-indent: -999em;
+    border-left:#f2ece8 2px solid ;
+    border-bottom:#f2ece8 2px solid ;
+    &.slidesjs-previous{
+      left: 0.5rem;
+      @include transform(rotate(45deg));
+    }
+    &.slidesjs-next{
+      right: 0.5rem;
+      @include transform(rotate(-135deg));
+    }
+  }
+}
+
 //test
 #__bs_notify__{
   display: none !important;
