@@ -74,7 +74,7 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=alaia',
+			'connectionString' => 'mysql:host=localhost;dbname=alaia_wechat',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '1qazxsw2',
