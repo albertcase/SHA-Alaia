@@ -202,6 +202,32 @@ img{
   }
 }
 
+//for page store
+body.page-store{
+  padding: 0.3rem;
+  background: #e6e6e6;
+}
+.avatar{
+  @include size(1.52rem,1.52rem);
+  margin: 0.5rem auto 0.4rem;
+}
+.add-content{
+  width: 100%;
+  margin: 0 auto 0.3rem;
+  padding: 0.3rem 0;
+  background: #fff;
+  text-align: center;
+  font-size: 0.32rem;
+  hr{
+    border: none;
+    width: 30%;
+    margin: 0.3rem auto;
+    height: 1px;
+    background: #000;
+  }
+}
+
+
 //test
 #__bs_notify__{
   display: none !important;
