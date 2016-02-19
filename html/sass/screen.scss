@@ -239,6 +239,7 @@ body.page-store{
   padding: 0.15rem 0;
 }
 #form-reservation{
+  padding: 5%;
   h3{
     color: rgba(0,0,0,0.6);
     font-size: 0.35rem;
@@ -253,25 +254,73 @@ body.page-store{
   input[type="tel"],
   input[type="email"],
   input[type="number"]{
-    @include size(90%,0.8rem);
+    @include size(100%,0.8rem);
     margin: 0.2rem auto;
     border: none;
     background: #fff;
     border-radius: 0;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     text-indent: 10px;
     padding: 0;
     font-size: 0.3rem;
   }
+  select{
+    color: #fff;
+  }
+  .select-box{
+    position: relative;
+    &.selected{
+      label{
+        display: none;
+      }
+      select{
+        color: #000;
+      }
+    }
+    &:after{
+      content: '';
+      display: block;
+      @include size(0.2rem,0.2rem);
+      position: absolute;
+      right: 0.2rem;
+      top: 0.45rem;
+      border-bottom: #252525 1px solid;
+      border-left: #252525 1px solid;
+      @include transform(rotate(-45deg));
+    }
+    label{
+      position: absolute;
+      left: 0.2rem;
+      top: 0.4rem;
+      color: #9e9e9e;
+      font-size: 0.3rem;
+      z-index: 2;
+    }
+
+  }
   .btn-submit{
     background: #cdc7bf;
-    @include size(90%,0.8rem);
+    @include size(100%,0.8rem);
     line-height: 0.8rem;
     margin: 0.2rem auto 0.3rem;
     text-align: center;
     color: #fff;
     font-size: 0.4rem;
     font-weight: bold;
+  }
+  textarea{
+    width: 100%;
+    background: #fff;
+    border: none;
+    font-size: 0.3rem;
+  }
+  .input-box-date{
+    h3{
+      font-size: 0.3rem;
+      text-align: left;
+    }
   }
 }
 
