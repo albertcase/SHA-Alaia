@@ -42,6 +42,9 @@ img{
 .brown-font{
   color: #887549;
 }
+.grey-bg{
+  background: #f2f2f2;
+}
 .wrapper{
   text-align: justify;
 }
@@ -227,6 +230,50 @@ body.page-store{
   }
 }
 
+//for form
+.tips{
+  background: #cdc7bf;
+  color: #fff;
+  font-size: 0.4rem;
+  text-align: center;
+  padding: 0.15rem 0;
+}
+#form-reservation{
+  h3{
+    color: rgba(0,0,0,0.6);
+    font-size: 0.35rem;
+    text-align: center;
+    padding: 0.2rem 0;
+  }
+  .input-box{
+    text-align: center;
+  }
+  select,
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="number"]{
+    @include size(90%,0.8rem);
+    margin: 0.2rem auto;
+    border: none;
+    background: #fff;
+    border-radius: 0;
+    -webkit-appearance: none;
+    text-indent: 10px;
+    padding: 0;
+    font-size: 0.3rem;
+  }
+  .btn-submit{
+    background: #cdc7bf;
+    @include size(90%,0.8rem);
+    line-height: 0.8rem;
+    margin: 0.2rem auto 0.3rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.4rem;
+    font-weight: bold;
+  }
+}
 
 //test
 #__bs_notify__{

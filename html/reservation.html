@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>阿莱亚ALAIA-店铺显示</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" >
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="/html/css/screen.css?v=1.0"/>
+</head>
+<body class="page-reservation page-form grey-bg">
+    <div class="container">
+        <div class="tips">
+            请填写以下信息，预约店内服务
+        </div>
+        <form action="post" id="form-reservation">
+            <h3>个人信息</h3>
+            <div class="input-box input-box-name">
+                <select name="name" id="name">
+                    <option value="称呼">称呼</option>
+                    <option value="称呼">女士</option>
+                    <option value="称呼">先生</option>
+                </select>
+            </div>
+            <div class="input-box input-box-lastname">
+                <input type="text" name="lastname" class="input-lastname" placeholder="姓"/>
+            </div>
+            <div class="input-box input-box-firstname">
+                <input type="text" name="firstname" class="input-firstname" placeholder="名"/>
+            </div>
+            <div class="input-box input-box-phone">
+                <input type="tel" name="phone" class="input-phone" maxlength="11" placeholder="联系电话"/>
+            </div>
+            <div class="input-box input-box-email">
+                <input type="email" name="email" class="input-email" placeholder="电子邮件"/>
+            </div>
+            <div class="input-box input-box-email">
+                <!--<label for="contact">您期望的联系方式</label>-->
+                您期望的联系方式
+                <input type="radio" name="contact" value="phone"/><label for="contact">联系电话</label>
+                <input type="radio" name="contact" value="email"/><label for="contact">电子邮件</label>
+            </div>
+
+            <h3 class="">选择专卖店</h3>
+            <div class="input-box input-box-country">
+                <select name="country" id="country">
+                    <option value="国家">国家</option>
+                    <option value="法国">法国</option>
+                </select>
+            </div>
+            <div class="input-box input-box-store">
+                <select name="store" id="store">
+                    <option value="专卖店">专卖店</option>
+                </select>
+            </div>
+            <div class="input-box input-box-ischinese">
+                <select name="ischinese" id="ischinese">
+                    <option value="">是否需要中文导购</option>
+                    <option value="">是</option>
+                    <option value="">否</option>
+                </select>
+            </div>
+            <div class="buttons btn-submit">
+                发送
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>
