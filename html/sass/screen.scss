@@ -248,11 +248,22 @@ body.page-store{
   }
   .input-box{
     text-align: center;
+    &.input-box-contact{
+      text-align: left;
+      color: #757575;
+      font-size: 0.35rem;
+      .c-tips{
+        margin: 0.2rem auto;
+        text-align: center;
+        font-size: 0.35rem;
+      }
+    }
   }
   select,
   input[type="text"],
   input[type="tel"],
   input[type="email"],
+  input[type="date"],
   input[type="number"]{
     @include size(100%,0.8rem);
     margin: 0.2rem auto;

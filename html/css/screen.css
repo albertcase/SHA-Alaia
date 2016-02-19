@@ -298,10 +298,21 @@ body.page-store {
 #form-reservation .input-box {
   text-align: center;
 }
+#form-reservation .input-box.input-box-contact {
+  text-align: left;
+  color: #757575;
+  font-size: 0.35rem;
+}
+#form-reservation .input-box.input-box-contact .c-tips {
+  margin: 0.2rem auto;
+  text-align: center;
+  font-size: 0.35rem;
+}
 #form-reservation select,
 #form-reservation input[type="text"],
 #form-reservation input[type="tel"],
 #form-reservation input[type="email"],
+#form-reservation input[type="date"],
 #form-reservation input[type="number"] {
   width: 100%;
   height: 0.8rem;
