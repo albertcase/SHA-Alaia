@@ -1,4 +1,4 @@
 .DS_Store
 .vagrant
 /upload/
-/vagrant/sha-alaia/protected/config/main.php
+/protected/config/main.php
