@@ -18,8 +18,16 @@ $(document).ready(function(){
 //    select
 //    reset all the select value
     $('select').val('');
-    $('select').on('change',function(){
+    $('select').on('change',function(e){
         $(this).parent().addClass('selected');
+        //console.log()
+        if($(this).hasClass('select-store')){
+            if($(this).val()=='MOUSSY'){
+                $('.input-box-ischinese').addClass('hide');
+            }else{
+                $('.input-box-ischinese').removeClass('hide');
+            }
+        }
     });
 
 //    Form Validation
@@ -89,14 +97,14 @@ $(document).ready(function(){
         }else{
             errorMsg.remove($('#store').parent());
         }
-
-        if(!$('#ischinese').val()){
-            errorMsg.add($('#ischinese').parent(),'是否需要导购');
-            validate = false;
-        }else{
-            errorMsg.remove($('#ischinese').parent());
+        if(!$('.input-box-ischinese').hasClass('hide')){
+            if(!$('#ischinese').val()){
+                errorMsg.add($('#ischinese').parent(),'是否需要导购');
+                validate = false;
+            }else{
+                errorMsg.remove($('#ischinese').parent());
+            }
         }
-
         if(!$('.date').val()){
             errorMsg.add($('.date').parent(),'请填入日期');
             validate = false;
