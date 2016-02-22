@@ -8,66 +8,81 @@ class database
     $this->sql = Yii::app()->db;
   }
 
-    public function checkData(array $data=array() , $table){
-	$select = array_keys($data);
-	$rows = (new \yii\db\Query())
-	    ->select($select)
-	    ->from($table)
-	    ->where($data)
-	    ->limit(1)
-	    ->all();
-	 if($rows)
-	    return true;
-	 return false;
-    }
+  public function checkData(array $data=array() , $table){
+    if(count($this->searchData($data,array(),$table,1)))
+      return true;
+    return false;
+  }
 
-    public function searchData(array $data=array() ,array $dataout=array(), $table ,$limit = 0){
-	$rows = (new \yii\db\Query())
-	    ->select($dataout)
-	    ->from($table)
-	    ->where($data);
-	 if($limit > 0)
-	    $rows = $rows->limit($limit);
-	 $rows = $rows->all();
-	 if($rows)
-	    return $rows;
-	 return false;
+  public function searchData(array $data=array() ,array $dataout=array(), $table ,$limit = 0){
+    $dout = '*';
+    $where = array();
+    $lim = '';
+    if(is_array($dataout) && count($dataout))
+      $dout = implode(',' ,$dataout);
+    if(is_array($data)){
+      foreach($data as $x => $x_val)
+        array_push($where ,$x.'="'.$x_val.'"');
     }
+    if(count($where)>0){
+      $where = ' where '.implode(' and ', $where);
+    }else{
+      $where = '';
+    }
+    if($limit > 0)
+      $lim = ' limit '.$limit;
+    $sql = 'select '.$dout.' from '.$table.$where.$lim;
+    return $this->Sqlselectall(trim($sql));
+  }
 
-    public function insertData(array $data=array(), $table){
-	$connection = \Yii::$app->db;
-	if(!$this->checkData($data ,$table))
-	    return $connection->createCommand()->insert($table, $data)->execute();
-	return false;
-    }
+  public function insertData(array $data=array(), $table){
+    $this->sql->createCommand()->insert($table, $data);
+    return $this->sql->getLastInsertID();
+  }
 
-    public function insertDatas(array $data=array(), $table){
-	foreach($data as $x){
-	    if($this->checkData($x, $table))
-		continue;
-	    $this->insertData($x, $table);
-	}
-	return true;
+  public function insertUData(array $data=array(), $table){
+      if($this->checkData($data=array() ,$table)){
+      $this->sql->createCommand()->insert($table, $data);
+      return $this->sql->getLastInsertID();
     }
+    return false;
+  }
 
-    public function updateData(array $data=array() ,array $change=array(), $table){
-	$connection = \Yii::$app->db;
-	if($this->checkData($data ,$table))
-	  return $connection->createCommand()->update($table, $change, $data)->execute();
-	return false;
-    }
+  public function insertDatas(array $datas=array(), $table){
+  	foreach($data as $x){
+  	    $this->insertData($x, $table);
+  	}
+  	return true;
+  }
 
-    public function delData(array $data=array(), $table){
-	$connection = \Yii::$app->db;
-	if($this->checkData($data ,$table))
-	    return $connection->createCommand()->delete($table, $data)->execute();
-	return false;
-    }
+  public function insertUDatas(array $datas=array(), $table){
+  	foreach($data as $x){
+  	    if($this->checkData($x, $table))
+  		    continue;
+  	    $this->insertData($x, $table);
+  	}
+  	return true;
+  }
 
-    public function delDatas(array $data=array(), $table){
-	foreach($data as $x){
-	    $this->delData($x ,$table);
-	}
-	return true;
-    }
+// sub function
+
+public function Sqlupdate($table,array $data = array(),$where,$warray){
+     $result = $this->sql->createCommand()->update($table, $data ,$where ,$warray);
+     if($result){
+       return true;
+     }else {
+       return false;
+     }
+}
+
+public function Sqlselectall($sql){
+   $result = $this->sql->createCommand($sql)->queryAll();
+   return $result;
+}
+
+public function Sqldelete($table,$where=""){
+   $result = $this->sql->createCommand()->delete($table, $where);
+   return $result;
+}
+
 }

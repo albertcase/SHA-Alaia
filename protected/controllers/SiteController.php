@@ -36,6 +36,46 @@ class SiteController extends Controller
 		$this->render('store', array('store' => $store));
 	}
 
+	public function actionApi($action){
+		$bespeakApi = new bespeakApi();
+		echo json_encode($bespeakApi->$action());
+		Yii::app()->end();
+	}
+
+	public function actionApi2(){
+		$xss = new forbidXss();
+		print_r($_SESSION['forbidcode']);
+		echo json_encode('aaaaaaaaaa');
+		Yii::app()->end();
+	}
+
+	public function actionApi3(){
+		// $xss = new forbidXss($_POST['xsscode']);
+		$sql = new database();
+		// $data = array(
+		// 	'name' => 'dirk',
+		// 	'surname' => 'wang',
+		// 	'title' => '1',
+		// 	'telphone' => '18516180508',
+		// 	'email' => '757867658@qq.com',
+		// 	'country' => '法国',
+		// 	'storeid' => '1',
+		// 	'callway' => '1',
+		// 	'sguide' => '0',
+		// 	'bespeaktime' => '2015-8-8'
+		// );
+		$data = array(
+			'name' => 'dirk' ,
+			'surname' => 'wang' ,
+			'title' => '1'
+			);
+		// print_r($sql->insertData($data ,'alaia_bespeak'));
+		// print_r($sql->searchData($data,array(),'alaia_bespeak',3));
+		print_r($sql->checkData($data,'alaia_bespeak'));
+		echo json_encode('aaaaaaaaaa');
+		Yii::app()->end();
+	}
+
 	/**
 	 * This is the action to handle external exceptions.
 	 */

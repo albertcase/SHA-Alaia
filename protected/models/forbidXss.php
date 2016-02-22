@@ -21,7 +21,7 @@ class forbidXss{
 
     public function addXsscode(){
       if(count($this->codes) > $this->limite ){
-	  array_shift( $this->codes );
+	       array_shift( $this->codes );
       }
       $xsskey = md5(uniqid().'code');
       $xssval = $this->eachlimit;
@@ -33,7 +33,7 @@ class forbidXss{
 
     public function comfirmCode(){
      if(array_key_exists($this->xsscode , $this->codes)){
-	 return true;
+	      return true;
       }
       return false;
     }

@@ -3,11 +3,11 @@
 class Session{
 
   public function set($key ,$val){
-    $_SESSION[trim($key)] = trim($val);
+    $_SESSION[trim($key)] = $val;
   }
 
   public function get($key){
-    return $_SESSION[$KEY];
+    return $_SESSION[$key];
   }
 
   public function has($key){
