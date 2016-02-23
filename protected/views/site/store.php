@@ -21,7 +21,7 @@
     <div class="store-time">营业时间：<?php echo $store['open']?></div>
 </div>
 <div class="store-map">
-    <img src="/img/avatar.png" alt=""/>
+    <img src="<?php echo $store['mapUrl']?>" alt=""/>
 </div>
 </body>
 </html>
