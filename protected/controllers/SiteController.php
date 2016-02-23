@@ -42,10 +42,10 @@ class SiteController extends Controller
 		Yii::app()->end();
 	}
 
-	public function actionApi2(){
-		$xss = new forbidXss();
-		print_r($_SESSION['forbidcode']);
-		echo json_encode('aaaaaaaaaa');
+	public function actionApi2($id){
+		$sql = "select * from same_store where id = ".intval($id);
+		$store = Yii::app()->db->createCommand($sql)->queryRow();
+		echo json_encode($store);
 		Yii::app()->end();
 	}
 

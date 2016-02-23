@@ -13,12 +13,12 @@
     <img src="/img/avatar.png" alt=""/>
 </div>
 <div class="add-content">
-    <h3 class="store-name">阿莱亚MARIGNAN店</h3>
+    <h3 class="store-name"><?php echo $store['name']?></h3>
     <hr>
-    <div class="store-address">地址：5 rue de Marignan, 75008 Paris</div>
-    <div class="store-phone">电话：01 76 72 91 11</div>
-    <div class="store-mail">邮箱： boutique.marignan@alaia.fr </div>
-    <div class="store-time">营业时间：周一至周六10点至19点</div>
+    <div class="store-address">地址：<?php echo $store['address']?></div>
+    <div class="store-phone">电话：<?php echo $store['telphone']?></div>
+    <div class="store-mail">邮箱： <?php echo $store['email']?></div>
+    <div class="store-time">营业时间：<?php echo $store['open']?></div>
 </div>
 <div class="store-map">
     <img src="/img/avatar.png" alt=""/>
