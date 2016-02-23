@@ -42,10 +42,9 @@ class SiteController extends Controller
 		Yii::app()->end();
 	}
 
-	public function actionApi2($id){
-		$sql = "select * from same_store where id = ".intval($id);
-		$store = Yii::app()->db->createCommand($sql)->queryRow();
-		echo json_encode($store);
+	public function actionApi2(){
+		$str = '86111111111111';
+		echo json_encode(strTest::telphone($str));
 		Yii::app()->end();
 	}
 
