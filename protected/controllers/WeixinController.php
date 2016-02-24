@@ -10,11 +10,10 @@ class WeixinController extends Controller
 	public function actionIndex()
 	{
 		$wechatObj = new Weixin();
-		echo $wechatObj->valid($_GET["echostr"]);
+		// echo $wechatObj->valid($_GET["echostr"]);
 		//Yii::app()->end();
-		// $postStr = $GLOBALS["HTTP_RAW_POST_DATA"];
-		//
-		// echo $wechatObj->responseMsg($postStr);
+		$postStr = $GLOBALS["HTTP_RAW_POST_DATA"];
+		echo $wechatObj->responseMsg($postStr);
 		Yii::app()->end();
 	}
 	public function actionTest()
