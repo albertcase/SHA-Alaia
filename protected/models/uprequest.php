@@ -13,11 +13,13 @@ class uprequest
   public function comfirmKeys($keys){ /*array(array('key' => key ,'type'=> post/get ,'regtype'=> regtype ,$selfReg => '') )*/
     $out = array();
     $k = '';
+    $strTest = new strTest();
     foreach($keys as $x){
       $k = $this->$x['type']($x['key']);
       if($x['regtype'] != 'text'){
-          if(!$this->$x['regtype']($k))
+          if(!$strTest->$x['regtype']($k)){
             return false;
+          }
       }
       $out = $out + array($x['key'] => $k);
       unset($k);

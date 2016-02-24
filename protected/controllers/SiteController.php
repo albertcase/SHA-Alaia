@@ -43,8 +43,9 @@ class SiteController extends Controller
 	}
 
 	public function actionApi2(){
-		$str = '86111111111111';
-		echo json_encode(strTest::telphone($str));
+		$str = '+8612312312312';
+		$strTest = new strTest();
+		echo json_encode($strTest->telphone($str));
 		Yii::app()->end();
 	}
 
