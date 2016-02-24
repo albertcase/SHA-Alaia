@@ -80,7 +80,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=alaia_wechat',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '1qazxsw2',
+			'password' => '123456',
 			'charset' => 'utf8',
 		),
 
