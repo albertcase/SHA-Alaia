@@ -1,6 +1,10 @@
 .DS_Store
 .vagrant
 /upload/
+<<<<<<< Updated upstream
 /protected/config/
+=======
+/protected/config/main.php
+>>>>>>> Stashed changes
 /protected/runtime/
 /assets/
