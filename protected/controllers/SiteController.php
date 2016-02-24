@@ -42,8 +42,17 @@ class SiteController extends Controller
 		$this->renderPartial('reservation',array('xsscode' => $xss->addXsscode()));
 	}
 
-	public function actionApi($action){
+	public function actionApi($action ,$xsscode = null){
 		$bespeakApi = new bespeakApi();
+		$forbitlist = array('addbespeak');
+		if(in_array($action,$forbitlist)){
+			$forbidXss = new forbidXss($xsscode);
+			$x = $forbidXss->subCode();
+			if($x != '51'){
+				echo json_encode($x);
+				Yii::app()->end();
+			}
+		}
 		echo json_encode($bespeakApi->$action());
 		Yii::app()->end();
 	}
