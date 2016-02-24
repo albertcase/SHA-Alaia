@@ -1,6 +1,6 @@
 .DS_Store
 .vagrant
-./upload/
-./protected/config/
-./protected/runtime/
-./assets/
+/upload/
+/protected/config/
+/protected/runtime/
+/assets/
