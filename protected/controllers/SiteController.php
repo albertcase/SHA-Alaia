@@ -36,6 +36,12 @@ class SiteController extends Controller
 		$this->renderPartial('store', array('store' => $store));
 	}
 
+	public function actionReservation()
+	{
+		$xss = new forbidXss();
+		$this->renderPartial('reservation',array('xsscode' => $xss->addXsscode()));
+	}
+
 	public function actionApi($action){
 		$bespeakApi = new bespeakApi();
 		echo json_encode($bespeakApi->$action());

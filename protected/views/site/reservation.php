@@ -7,8 +7,13 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" type="text/css" href="/html/css/screen.css?v=1.0"/>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/reservation.js"></script>
+    <script type="text/javascript" src="/html/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/html/js/reservation.js"></script>
+    <script>
+      var pagecode = {
+          xsscode:"<?php echo $xsscode; ?>",
+      }
+    </script>
 </head>
 <body class="page-reservation page-form grey-bg">
     <div class="container">
