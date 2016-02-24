@@ -33,7 +33,7 @@ class SiteController extends Controller
 	{
 		$sql = "select * from same_store where id = ".intval($id);
 		$store = Yii::app()->db->createCommand($sql)->queryRow();
-		$this->render('store', array('store' => $store));
+		$this->renderPartial('store', array('store' => $store));
 	}
 
 	public function actionApi($action){
