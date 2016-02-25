@@ -42,9 +42,25 @@ class SiteController extends Controller
 		$this->renderPartial('reservation',array('xsscode' => $xss->addXsscode()));
 	}
 
+	public function actionGuest()
+	{
+		$xss = new forbidXss();
+		$this->renderPartial('guest',array('xsscode' => $xss->addXsscode()));
+	}
+
+	public function actionList()
+	{
+		$session = new Session();
+		// if($session->has('loguser')){
+			$this->renderPartial('list');
+			Yii::app()->end();
+		// }
+		$this->redirect('/site/guest');
+	}
+
 	public function actionApi($action ,$xsscode = null){
 		$bespeakApi = new bespeakApi();
-		$forbitlist = array('addbespeak');
+		$forbitlist = array();
 		if(in_array($action,$forbitlist)){
 			$forbidXss = new forbidXss($xsscode);
 			$x = $forbidXss->subCode();
@@ -54,6 +70,17 @@ class SiteController extends Controller
 			}
 		}
 		echo json_encode($bespeakApi->$action());
+		Yii::app()->end();
+	}
+
+	public function actionAadminapi($action){
+		$bespeakadmin = new bespeakadmin();
+		$session = new Session();
+		if($session->has('loguser')){
+			echo json_encode($bespeakadmin->$action());
+			Yii::app()->end();
+		}
+		echo json_encode('4');/*not login*/
 		Yii::app()->end();
 	}
 

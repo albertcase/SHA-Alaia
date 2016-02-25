@@ -2,7 +2,7 @@
 
 class strTest{
   public function email($key){
-    return $this->reg($key ,"/^[0-9a-zA-Z._-]+@[0-9a-zA-Z]+(\.[0-9a-zA-Z]+){0,1}$/");
+    return $this->reg($key ,"/^[0-9a-zA-Z._-]+@[0-9a-zA-Z]+(\.[0-9a-zA-Z]+){0,3}$/");
   }
 
   public function number($key){
