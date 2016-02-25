@@ -108,6 +108,9 @@ img{
 //for page-legend
 .page-legend{
   background: #fff;
+  .title{
+    margin-top: 20px;
+  }
   .content{
     padding: 0;
     background-color: #f2f2f2;
@@ -155,6 +158,10 @@ img{
       padding: 0.2rem;
     }
   }
+}
+
+.wrapper-3 .title{
+  margin-top: 20px;
 }
 
 //for page-book

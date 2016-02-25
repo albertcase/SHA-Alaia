@@ -7986,3 +7986,27 @@ Stack trace:
 #17 {main}
 REQUEST_URI=/site/api/action/addbespeak/xsscode/93dc9a948fa8fd2b34108b9e30de4813
 ---
+2016/02/25 11:21:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/02/25 11:21:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/02/25 11:21:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/legend"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/legend')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/legend
+---
