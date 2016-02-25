@@ -64,7 +64,7 @@ $(document).ready(function(){
                         alert('数据格式不对');
                     }else if(data=='13'){
                         alert('数据提交失败');
-                    }else if(data=='52'){
+                    }else if(data=='52' ||data=='53'){
                         window.location.reload();
                     }
                 }
