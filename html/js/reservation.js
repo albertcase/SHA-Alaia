@@ -33,6 +33,7 @@ $(document).ready(function(){
 //    Form Validation
     var enableSubmit = true;
     $('.btn-submit').on('click', function(){
+        _hmt.push(['_trackEvent', 'btn-submit', 'click', '提交']);
         if(FormValidate()){
             var formdata = {
                 name:$('.input-firstname').val(),
