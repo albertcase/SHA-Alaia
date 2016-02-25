@@ -25,9 +25,9 @@
             <div class="input-box input-box-name select-box">
                 <label for="name">称呼</label>
                 <select name="name" id="name">
-                    <option value="先生">先生</option>
-                    <option value="女士">女士</option>
-                    <option value="小姐">小姐</option>
+                    <option value="1">先生</option>
+                    <option value="2">女士</option>
+                    <option value="3">小姐</option>
                 </select>
             </div>
             <div class="input-box input-box-lastname">
@@ -59,15 +59,15 @@
             <div class="input-box input-box-store select-box">
                 <label for="store">专卖店</label>
                 <select name="store" id="store" class="select-store">
-                    <option value="MOUSSY">阿莱亚MOUSSY店</option>
-                    <option value="MARIGNAN">阿莱亚MARIGNAN店</option>
+                    <option value="1">阿莱亚MOUSSY店</option>
+                    <option value="2">阿莱亚MARIGNAN店</option>
                 </select>
             </div>
             <div class="input-box input-box-ischinese select-box">
                 <label for="ischinese">是否需要中文导购</label>
                 <select name="ischinese" id="ischinese">
-                    <option value="是">是</option>
-                    <option value="否">否</option>
+                    <option value="1">是</option>
+                    <option value="0">否</option>
                 </select>
             </div>
 

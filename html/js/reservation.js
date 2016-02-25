@@ -20,9 +20,9 @@ $(document).ready(function(){
     $('select').val('');
     $('select').on('change',function(e){
         $(this).parent().addClass('selected');
-        //console.log()
+
         if($(this).hasClass('select-store')){
-            if($(this).val()=='MOUSSY'){
+            if($(this).val()=='1'){
                 $('.input-box-ischinese').addClass('hide');
             }else{
                 $('.input-box-ischinese').removeClass('hide');
@@ -31,17 +31,51 @@ $(document).ready(function(){
     });
 
 //    Form Validation
+    var enableSubmit = true;
     $('.btn-submit').on('click', function(){
         if(FormValidate()){
-            console.log('true');
-        }else{
-            console.log('false');
+            var formdata = {
+                name:$('.input-firstname').val(),
+                surname:$('.input-lastname').val(),
+                title:$('#name').val(),
+                telphone:$('.input-phone').val(),
+                email:$('.input-email').val(),
+                country:$('#country').val(),
+                storeid:$('#store').val(),
+                callway:$("input:radio[name=contact]:checked").val(),
+                sguide:($('#store').val()==1)?0:$('#ischinese').val(),
+                bespeaktime:$('.date').val()
+            };
 
+            if(!enableSubmit) return;
+            enableSubmit = false;
+            $.ajax({
+                url:'/site/api/action/addbespeak/xsscode/'+pagecode.xsscode,
+                type:'post',
+                dataType:'json',
+                data:formdata,
+                success:function(data){
+
+                    enableSubmit = true;
+                    if(data=='12'){
+                        alert('提交成功');
+                        window.location.reload();
+                    }else if(data=='11'){
+                        alert('数据格式不对');
+                    }else if(data=='13'){
+                        alert('数据提交失败');
+                    }else if(data=='52'){
+                        window.location.reload();
+                    }
+                }
+            })
+        }else{
+            console.log('数据格式不对');
         }
     });
 
 
-    function FormValidate(formdata){
+    function FormValidate(){
         var validate = true;
         if(!$('#name').val()){
             errorMsg.add($('#name').parent(),'请选择合适的称呼');
@@ -76,7 +110,7 @@ $(document).ready(function(){
             errorMsg.add($('.input-email').parent(),'电子邮件不能为空');
             validate = false;
         }else{
-            if($('.input-email').val().indexOf('@')<0){
+            if(!((/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/).test($('.input-email').val()))){
                 errorMsg.add($('.input-email').parent(),'电子邮件格式错误');
                 validate = false;
             }else{
