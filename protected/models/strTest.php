@@ -6,7 +6,7 @@ class strTest{
   }
 
   public function number($key){
-    return $this->reg($key ,"/^-.[0-9]+$/");
+    return $this->reg($key ,"/^-{0,1}[0-9]+$/");
   }
 
   public function telphone($key){

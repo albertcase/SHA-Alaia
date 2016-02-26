@@ -25,8 +25,9 @@ class bespeakApi
     );
     if(!$keys = $this->request->comfirmKeys($data))
       return '11'; /*data formate error*/
-    if($result = $this->sql->insertData($keys ,'alaia_bespeak'))
+    if($result = $this->sql->insertData($keys ,'alaia_bespeak')){
       return '12'; /*data instart success*/
+    }
     return '13';/*data insert error*/
   }
 

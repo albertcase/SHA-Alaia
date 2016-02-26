@@ -15,7 +15,7 @@
       <div class="checkoption">
         <div>
           搜索条件
-          <select>
+          <select id="allorders">
             <option value="name">名字</option>
             <option value="surname">姓氏</option>
             <option value="title">称呼</option>
@@ -26,36 +26,18 @@
             <option value="sguide">是否需要导购</option>
             <option value="status">状态</option>
           </select>
-          <i class="fa fa-plus-square"></i>
+          <i class="fa fa-plus-square"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          每页显示：
+          <select id="everypage">
+            <option value="20">20条</option>
+            <option value="30">30条</option>
+            <option value="40">40条</option>
+            <option value="50">50条</option>
+          </select>
+          <button class="btn-blue" id="searchbt" style="margin-left:80px;">搜索</button>
         </div>
         <div class="dataoption">
-          <dl>
-            <dt>
-              <i class="fa fa-minus-square faleft"></i>
-              名字
-            </dt>
-            <dd>
-              <input type="text" ></input>
-            </dd>
-          </dl>
-          <dl>
-            <dt>
-              <i class="fa fa-minus-square faleft"></i>
-              名字
-            </dt>
-            <dd>
-              <input type="text" ></input>
-            </dd>
-          </dl>
-          <dl>
-            <dt>
-              <i class="fa fa-minus-square faleft"></i>
-              名字
-            </dt>
-            <dd>
-              <input type="text" ></input>
-            </dd>
-          </dl>
+
         </div>
         <div>
         </div>
@@ -94,7 +76,24 @@
             </tr>
           </tbody>
         </table>
-        <div class="batchweid">
+        <div class="bespeaklistfoot">
+          <ul>
+            <li pagid = "1" class="pagenum">1</li>
+            <li pagid = "1" class="notfeedback">…</li>
+            <li pagid = "1" class="pagenum">23</li>
+            <li pagid = "1" class="pagenum">24</li>
+            <li pagid = "1" class="chooseli">25</li>
+            <li pagid = "1" class="pagenum">26</li>
+            <li pagid = "1" class="pagenum">27</li>
+            <li pagid = "1" class="pagenum">28</li>
+            <li pagid = "1" class="pagenum">29</li>
+            <li pagid = "1" class="pagenum">30</li>
+            <li pagid = "1" class="pagenum">31</li>
+            <li pagid = "1" class="pagenum">32</li>
+            <li pagid = "1" class="pagenum">33</li>
+            <li pagid = "1" class="notfeedback">…</li>
+            <li pagid = "1" class="pagenum">100</li>
+          </ul>
         </div>
       </div>
     </div>

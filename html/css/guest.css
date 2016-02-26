@@ -116,7 +116,7 @@ input:focus{
   height:30px;
 }
 
-.bespeaklist tr>th ,.adminlist tr>th{
+.bespeaklist tr>th{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -172,7 +172,7 @@ input:focus{
 
 .dataoption dl dt{
   display:table-cell;
-  width:110px;
+  width:180px;
   text-align:right;
 }
 
@@ -210,5 +210,61 @@ input:focus{
 
 .fa-minus-square{
   color:red;
+  cursor: pointer;
+}
+
+.bespeaklistfoot{
+  text-align: center;
+}
+
+.bespeaklistfoot ul{
+  padding: 0px;
+  margin-top: 20px;
+  border-collapse:collapse;
+  /*border: 1px solid #777;*/
+}
+
+.bespeaklistfoot ul>li{
+  padding: 10px;
+  margin: 0px;
+  margin-left: -4px;
+  color: blue;
+  display: inline;
+  border-left: 1px solid #09A04F;
+  border-top: 1px solid #09A04F;
+  border-bottom: 1px solid #09A04F;
+  background-color: #fff;
+}
+
+.bespeaklistfoot ul>li:last-child{
+  border-right: 1px solid #09A04F;
+}
+
+.bespeaklistfoot ul>.pagenum:hover{
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.bespeaklistfoot ul>.chooseli{
+  background-color: #09A04F !important;
 }
 /*bespeaklist end*/
+
+.popupbox2{
+  display:none;
+  position:fixed;
+  right:0px;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  background-color:rgba(0, 0, 0, 0);/*change background*//*////////////////*/
+  z-index:202;
+  overflow:scroll;
+}
+
+.popupbox2>.faload{
+    text-align:center;
+    font-size:50px;
+    color:rgba(0, 153, 204, 1);
+    margin-top:30%;
+}

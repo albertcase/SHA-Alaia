@@ -73,7 +73,7 @@ class SiteController extends Controller
 		Yii::app()->end();
 	}
 
-	public function actionAadminapi($action){
+	public function actionAdminapi($action){
 		$bespeakadmin = new bespeakadmin();
 		$session = new Session();
 		if($session->has('loguser')){
@@ -85,15 +85,15 @@ class SiteController extends Controller
 	}
 
 	public function actionApi2(){
-		$str = '+8612312312312';
-		$strTest = new strTest();
-		echo json_encode($strTest->telphone($str));
+		$bespeakadmin = new bespeakadmin();
+		echo json_encode($bespeakadmin->getpage());
 		Yii::app()->end();
 	}
 
 	public function actionApi3(){
 		// $xss = new forbidXss($_POST['xsscode']);
 		$sql = new database();
+		$str = new strTest();
 		// $data = array(
 		// 	'name' => 'dirk',
 		// 	'surname' => 'wang',
@@ -106,15 +106,19 @@ class SiteController extends Controller
 		// 	'sguide' => '0',
 		// 	'bespeaktime' => '2015-8-8'
 		// );
-		$data = array(
-			'name' => 'dirk' ,
-			'surname' => 'wang' ,
-			'title' => '1'
-			);
-		// print_r($sql->insertData($data ,'alaia_bespeak'));
-		// print_r($sql->searchData($data,array(),'alaia_bespeak',3));
-		print_r($sql->checkData($data,'alaia_bespeak'));
-		echo json_encode('aaaaaaaaaa');
+		// $data = array(
+		// 	'name' => 'dirk' ,
+		// 	'surname' => 'wang' ,
+		// 	'title' => '1'
+		// 	);
+		// print_r($sql->insertData(array() ,'alaia_bespeak'));
+		// print_r($sql->searchData(array(),array('id'),'same_getlog' ,3 ,1 ,'id desc'));
+		// print_r($sql->checkData(array(),'alaia_bespeak'));
+		// $sql->getcount('same_getlog');
+		// echo json_encode($sql->getpage(1 ,3 ,array() ,array('id') ,'same_getlog' ));
+		// echo json_encode($str->number('-123'));
+		echo json_encode($sql->getcount('alaia_bespeak' ,array('name'=>'jjjj53')));
+		// echo json_encode($sql->Sqlupdate('alaia_bespeak',array('status'=>'1'),'id=:id',array(':id' => '21')));getcount
 		Yii::app()->end();
 	}
 
