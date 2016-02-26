@@ -84,6 +84,13 @@ class SiteController extends Controller
 		Yii::app()->end();
 	}
 
+	public function actionLogout(){
+		$session = new Session();
+		$session->clean();
+		echo json_encode('11');/*login out*/
+		Yii::app()->end();
+	}
+
 	public function actionApi2(){
 		$bespeakadmin = new bespeakadmin();
 		echo json_encode($bespeakadmin->getpage());

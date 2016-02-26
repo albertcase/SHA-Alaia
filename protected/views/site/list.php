@@ -16,12 +16,12 @@
         <div>
           SEARCH CRITERIA
           <select id="allorders">
-            <option value="name">Name</option>
-            <option value="surname">Surname</option>
+            <option value="name">First name</option>
+            <option value="surname">Family name</option>
             <option value="title">Title</option>
-            <option value="telphone">Telphone</option>
-            <option value="email">EMAIL</option>
-            <option value="callway">Call Way</option>
+            <option value="telphone">Phone No.</option>
+            <option value="email">Email address.</option>
+            <option value="callway">Preferred way to contact</option>
             <option value="storeid">Store name</option>
             <option value="sguide">Need Chanese Shopping guide</option>
             <option value="status">Status</option>
@@ -34,9 +34,10 @@
             <option value="40">40条</option>
             <option value="50">50条</option>
           </select>
-          <button class="btn-blue" id="searchbt" style="margin-left:80px;">搜索</button>
+          <button class="btn-blue" id="searchbt" style="margin-left:80px;">Search</button>
           &nbsp;&nbsp;&nbsp;&nbsp;
           <span id="sumtotal"></span>
+          <span id="logout">Logout</span>
         </div>
         <div class="dataoption">
 
@@ -50,15 +51,15 @@
               <th>No.</th>
               <th>First name</th>
               <th>Family name</th>
-              <th>称呼</th>
+              <th>Title</th>
               <th>Phone No.</th>
-              <th>Email address.</th>
+              <th>Email address</th>
               <th>Preferred way to contact</th>
               <th>Store</th>
               <th>Store Country</th>
               <th>Chinese Guide</th>
-              <th>预约日期</th>
-              <th>状态</th>
+              <th>Appointment Date</th>
+              <th>Status</th>
             </tr>
           </thead>
           <tbody>
