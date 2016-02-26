@@ -51,10 +51,10 @@ class SiteController extends Controller
 	public function actionList()
 	{
 		$session = new Session();
-		// if($session->has('loguser')){
+		if($session->has('loguser')){
 			$this->renderPartial('list');
 			Yii::app()->end();
-		// }
+		}
 		$this->redirect('/site/guest');
 	}
 
