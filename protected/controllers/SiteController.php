@@ -44,6 +44,11 @@ class SiteController extends Controller
 
 	public function actionGuest()
 	{
+		$session = new Session();
+		if($session->has('loguser')){
+			$this->redirect('/site/list');
+			Yii::app()->end();
+		}
 		$xss = new forbidXss();
 		$this->renderPartial('guest',array('xsscode' => $xss->addXsscode()));
 	}

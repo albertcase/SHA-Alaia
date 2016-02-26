@@ -2,7 +2,7 @@ var popbox={
   logsubmit:function(){
     html.pagehold();
     $.ajax({
-      url:"./api/action/alaialogin/xsscode/"+pagecode.xsscode,
+      url:"/site/api/action/alaialogin/xsscode/"+pagecode.xsscode,
       dataType:"json",
       type:"POST",
       data:{
@@ -11,7 +11,7 @@ var popbox={
       },
       success:function(data){
         if(data == '14'){
-            window.location.href='./list/';
+            window.location.href='/site/list/';
         }
         if(data == '15'|| data == '11'){
           html.closepop2();
