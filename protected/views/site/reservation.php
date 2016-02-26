@@ -54,8 +54,8 @@
             <div class="input-box input-box-contact">
                 <!--<label for="contact">您期望的联系方式</label>-->
                 <div class="c-tips">您期望的联系方式</div>
-                <input type="radio" name="contact" value="phone" checked="checked"/><label for="contact">联系电话</label>
-                <input type="radio" name="contact" value="email"/><label for="contact">电子邮件</label>
+                <input type="radio" name="contact" value="1" checked="checked"/><label for="contact">联系电话</label>
+                <input type="radio" name="contact" value="2"/><label for="contact">电子邮件</label>
             </div>
 
             <h3 class="">选择专卖店</h3>
