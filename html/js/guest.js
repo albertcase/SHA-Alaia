@@ -82,7 +82,7 @@ var adminlist = {
     a += '<dt><i class="fa fa-minus-square faleft" opt="callway"></i>Contact Way：</dt>';
     a += '<dd>';
     a += '<select id="ordercallway">';
-    a += '<option value="1">Telhone</option>';
+    a += '<option value="1">Telephone</option>';
     a += '<option value="2">Email</option>';
     a += '</select>';
     a += '</dd>';
@@ -145,7 +145,7 @@ var adminlist = {
         a += '<th>'+data[i]["telphone"]+'</th>';
         a += '<th>'+data[i]["email"]+'</th>';
         if(data[i]["callway"] == "1")
-          c = "Telphone";
+          c = "Telephone";
         if(data[i]["callway"] == "2")
           c = "Email";
         a += '<th>'+c+'</th>';
