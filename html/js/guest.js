@@ -145,7 +145,7 @@ var adminlist = {
         a += '<th>'+data[i]["telphone"]+'</th>';
         a += '<th>'+data[i]["email"]+'</th>';
         if(data[i]["callway"] == "1")
-          c = "Telhone";
+          c = "Telpone";
         if(data[i]["callway"] == "2")
           c = "Email";
         a += '<th>'+c+'</th>';
