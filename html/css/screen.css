@@ -95,8 +95,18 @@ img {
   display: none !important;
 }
 
+.error {
+  color: red;
+  text-align: left;
+  font-size: 0.2rem;
+}
+
 .brown-font {
   color: #887549;
+}
+
+.grey-bg {
+  background: #f2f2f2;
 }
 
 .wrapper {
@@ -152,6 +162,9 @@ img {
 .page-legend {
   background: #fff;
 }
+.page-legend .title {
+  margin-top: 20px;
+}
 .page-legend .content {
   padding: 0;
   background-color: #f2f2f2;
@@ -193,6 +206,10 @@ img {
 }
 .page-historicalmoments .content p {
   padding: 0.2rem;
+}
+
+.wrapper-3 .title {
+  margin-top: 20px;
 }
 
 .page-book img {
@@ -245,6 +262,140 @@ img {
   -ms-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
+}
+
+body.page-store {
+  padding: 0.3rem;
+  background: #e6e6e6;
+}
+
+.avatar {
+  width: 1.52rem;
+  height: 1.52rem;
+  margin: 0.5rem auto 0.4rem;
+}
+
+.add-content {
+  width: 100%;
+  margin: 0 auto 0.3rem;
+  padding: 0.3rem 0;
+  background: #fff;
+  text-align: center;
+  font-size: 0.32rem;
+}
+.add-content hr {
+  border: none;
+  width: 30%;
+  margin: 0.3rem auto;
+  height: 1px;
+  background: #000;
+}
+
+.tips {
+  background: #cdc7bf;
+  color: #fff;
+  font-size: 0.4rem;
+  text-align: center;
+  padding: 0.15rem 0;
+}
+
+#form-reservation {
+  padding: 5%;
+}
+#form-reservation h3 {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.35rem;
+  text-align: center;
+  padding: 0.2rem 0;
+}
+#form-reservation .input-box {
+  text-align: center;
+}
+#form-reservation .input-box.input-box-contact {
+  text-align: left;
+  color: #757575;
+  font-size: 0.35rem;
+}
+#form-reservation .input-box.input-box-contact .c-tips {
+  margin: 0.2rem auto;
+  text-align: center;
+  font-size: 0.35rem;
+}
+#form-reservation select,
+#form-reservation input[type="text"],
+#form-reservation input[type="tel"],
+#form-reservation input[type="email"],
+#form-reservation input[type="date"],
+#form-reservation input[type="number"] {
+  width: 100%;
+  height: 0.8rem;
+  margin: 0.2rem auto;
+  border: none;
+  background: #fff;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-indent: 10px;
+  padding: 0;
+  font-size: 0.3rem;
+}
+#form-reservation select {
+  color: #fff;
+}
+#form-reservation .select-box {
+  position: relative;
+}
+#form-reservation .select-box.selected label {
+  display: none;
+}
+#form-reservation .select-box.selected select {
+  color: #000;
+}
+#form-reservation .select-box:after {
+  content: '';
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  position: absolute;
+  right: 0.2rem;
+  top: 0.45rem;
+  border-bottom: #252525 1px solid;
+  border-left: #252525 1px solid;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+#form-reservation .select-box label {
+  position: absolute;
+  left: 0.2rem;
+  top: 0.4rem;
+  color: #9e9e9e;
+  font-size: 0.3rem;
+  z-index: 2;
+}
+#form-reservation .btn-submit {
+  background: #cdc7bf;
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  margin: 0.2rem auto 0.3rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.4rem;
+  font-weight: bold;
+}
+#form-reservation textarea {
+  width: 100%;
+  background: #fff;
+  border: none;
+  font-size: 0.3rem;
+}
+#form-reservation .input-box-date h3 {
+  font-size: 0.3rem;
+  text-align: left;
 }
 
 #__bs_notify__ {

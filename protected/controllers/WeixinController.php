@@ -10,10 +10,9 @@ class WeixinController extends Controller
 	public function actionIndex()
 	{
 		$wechatObj = new Weixin();
-		//echo $wechatObj->valid($_GET["echostr"]);
+		// echo $wechatObj->valid($_GET["echostr"]);
 		//Yii::app()->end();
 		$postStr = $GLOBALS["HTTP_RAW_POST_DATA"];
-
 		echo $wechatObj->responseMsg($postStr);
 		Yii::app()->end();
 	}
@@ -60,7 +59,7 @@ class WeixinController extends Controller
 		 $url = 'http://file.api.weixin.qq.com/cgi-bin/media/upload?access_token='.$access_token.'&type=TYPE';
 		 $urlPost=http_build_query($data);
 		echo $this->httpRequest($url,'post',$data);
-		
+
 	}
 
 	private function httpRequest($url,$method='get',$params=array()){
@@ -129,7 +128,7 @@ class WeixinController extends Controller
 		$rs=$wechatObj->getOauthAccessToken($code);
 		if(isset($rs['access_token'])){
 			$_SESSION['access_token']=$rs['access_token'];
-			$_SESSION['openid']=$rs['openid'];	
+			$_SESSION['openid']=$rs['openid'];
 			$sql="select * from same_weixin_info where openid='".$_SESSION['openid']."'";
 			$ins=Yii::app()->db->createCommand($sql)->select()->queryRow();
 			if(!isset($ins['id'])){
@@ -157,7 +156,7 @@ class WeixinController extends Controller
 		$wechatObj = new Weixin();
 		$rs=$wechatObj->getOauthAccessToken($code);
 		if(isset($rs['openid'])){
-			$_SESSION['openid']=$rs['openid'];	
+			$_SESSION['openid']=$rs['openid'];
 			Header('Location:'.$_SESSION['callback_url']);
 			Yii::app()->end();
 		}
