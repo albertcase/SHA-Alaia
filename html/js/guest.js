@@ -371,7 +371,7 @@ var adminlist = {
         }
         if(data != '11'){
           adminlist.count = Math.ceil(parseInt(data['count'])/parseInt($("#everypage").val()));
-          $("#sumtotal").text("TOTLE:"+adminlist.count);
+          $("#sumtotal").text("TOTLE:"+parseInt(data['count']));
           html.closepop2();
           self.ajaxsend(self.submitsearch() ,1 ,$("#everypage").val());
           return true;
