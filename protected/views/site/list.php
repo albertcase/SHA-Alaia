@@ -29,10 +29,10 @@
           <i class="fa fa-plus-square"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           SHOW：
           <select id="everypage">
-            <option value="20">20条</option>
-            <option value="30">30条</option>
-            <option value="40">40条</option>
-            <option value="50">50条</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
           </select>
           <button class="btn-blue" id="searchbt" style="margin-left:80px;">Search</button>
           &nbsp;&nbsp;&nbsp;&nbsp;
