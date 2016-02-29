@@ -100,6 +100,13 @@ class WeixinController extends Controller
 		Yii::app()->end();
 	}
 
+	public function actionRefreshtoken()
+	{
+		$wechatObj = new Weixin();
+		echo $wechatObj->refresh_token();
+		Yii::app()->end();
+	}
+
 	public function actionOauth($callback)
 	{
 		$_SESSION['callback_url']=$callback;

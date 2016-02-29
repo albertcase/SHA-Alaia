@@ -317,6 +317,31 @@ class Weixin{
 
 	}
 
+	public function refresh_token()
+	{
+		$rs = file_get_contents('https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid='.$this->_appid.'&secret='.$this->_secret);
+		$rs = json_decode($rs,true);
+		if(isset($rs['access_token'])){
+			$time = time();
+			$access_token = $rs['access_token'];
+			$ticketfile = file_get_contents("https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=".$access_token."&type=jsapi");
+			$ticketfile = json_decode($ticketfile, true);
+			$ticket = $ticketfile['ticket'];
+			$fp = fopen("upload/time.txt", "w");
+			fwrite($fp,$time);
+			fclose($fp);
+			$fp = fopen("upload/access_token.txt", "w");
+			fwrite($fp,$access_token);
+			fclose($fp);
+			$fp = fopen("upload/ticket.txt", "w");
+			fwrite($fp,$ticket);
+			fclose($fp);
+			return $rs['access_token'];
+		}else{
+			throw new Exception($rs['errcode']);
+		}
+	}
+
 	public function getJsSDK($url)
 	{
 
