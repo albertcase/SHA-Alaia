@@ -2,7 +2,7 @@ var popbox={
   logsubmit:function(){
     html.pagehold();
     $.ajax({
-      url:"./api/action/alaialogin/xsscode/"+pagecode.xsscode,
+      url:"/site/api/action/alaialogin/xsscode/"+pagecode.xsscode,
       dataType:"json",
       type:"POST",
       data:{
@@ -11,11 +11,11 @@ var popbox={
       },
       success:function(data){
         if(data == '14'){
-            window.location.href='./list/';
+            window.location.href='/site/list/';
         }
         if(data == '15'|| data == '11'){
           html.closepop2();
-          html.tips("密码或者账户错误");
+          html.tips("password or username Error");
         }
         if(data == '52' ||data =='53'){
           window.location.reload();
@@ -38,26 +38,26 @@ var adminlist = {
   count:0,
   buildname:function(){
     var a='<dl>';
-    a += '<dt><i class="fa fa-minus-square faleft" opt="name"></i>名字:</dt>';
+    a += '<dt><i class="fa fa-minus-square faleft" opt="name"></i>First name:</dt>';
     a += '<dd><input type="text" id="ordername"></input></dd>';
     a += '</dl>';
     return a;
   },
   buildsurname:function(){
     var a='<dl>';
-    a += '<dt><i class="fa fa-minus-square faleft" opt="surname"></i>姓氏:</dt>';
+    a += '<dt><i class="fa fa-minus-square faleft" opt="surname"></i>Family name:</dt>';
     a += '<dd><input type="text" id="ordersurname"></input></dd>';
     a += '</dl>';
     return a;
   },
   buildtitle:function(){
     var a='<dl>'
-    a += '<dt><i class="fa fa-minus-square faleft" opt="title"></i>称呼：</dt>';
+    a += '<dt><i class="fa fa-minus-square faleft" opt="title"></i>Title：</dt>';
     a += '<dd>';
     a +='<select id="ordertitle">';
-    a += '<option value="1">先生</option>';
-    a += '<option value="2">女士</option>';
-    a += '<option value="3">小姐</option>';
+    a += '<option value="1">Sir</option>';
+    a += '<option value="2">Ms</option>';
+    a += '<option value="3">Miss</option>';
     a += '</select>';
     a += '</dd>';
     a += '</dl>';
@@ -65,25 +65,25 @@ var adminlist = {
   },
   buildemail:function(){
     var a='<dl>';
-    a += '<dt><i class="fa fa-minus-square faleft" opt="email"></i>联系邮箱:</dt>';
+    a += '<dt><i class="fa fa-minus-square faleft" opt="email"></i>Email address:</dt>';
     a += '<dd><input type="text" id="orderemail"></input></dd>';
     a += '</dl>';
     return a;
   },
   buildtelphone:function(){
     var a='<dl>';
-    a += '<dt><i class="fa fa-minus-square faleft" opt="telphone"></i>联系电话:</dt>';
+    a += '<dt><i class="fa fa-minus-square faleft" opt="telphone"></i>Phone No:</dt>';
     a += '<dd><input type="text" id="ordertelphone"></input></dd>';
     a += '</dl>';
     return a;
   },
   buildcallway:function(){
     var a='<dl>';
-    a += '<dt><i class="fa fa-minus-square faleft" opt="callway"></i>联系方式：</dt>';
+    a += '<dt><i class="fa fa-minus-square faleft" opt="callway"></i>Contact Way：</dt>';
     a += '<dd>';
     a += '<select id="ordercallway">';
-    a += '<option value="1">电话联系</option>';
-    a += '<option value="2">电子邮件</option>';
+    a += '<option value="1">Telephone</option>';
+    a += '<option value="2">Email</option>';
     a += '</select>';
     a += '</dd>';
     a += '</dl>';
@@ -91,7 +91,7 @@ var adminlist = {
   },
   buildstoreid:function(){
     var a='<dl>';
-    a += '<dt><i class="fa fa-minus-square faleft" opt="storeid"></i>店铺：</dt>';
+    a += '<dt><i class="fa fa-minus-square faleft" opt="storeid"></i>Store：</dt>';
     a += '<dd>';
     a += '<select id="orderstoreid">';
     a += '<option value="1">阿莱亚MOUSSY店</option>';
@@ -103,11 +103,11 @@ var adminlist = {
   },
   buildsguide: function(){
     var a='<dl>';
-    a += '<dt><i class="fa fa-minus-square faleft"  opt="sguide"></i>是否需要中文导购：</dt>';
+    a += '<dt><i class="fa fa-minus-square faleft"  opt="sguide"></i>Chinese Guide：</dt>';
     a += '<dd>';
     a += '<select id="ordersguide">';
-    a += '<option value="1">是</option>';
-    a += '<option value="0">否</option>';
+    a += '<option value="1">Need</option>';
+    a += '<option value="0">Not Need</option>';
     a += '</select>';
     a += '</dd>';
     a += '</dl>';
@@ -115,11 +115,11 @@ var adminlist = {
   },
   buildstatus: function(){
     var a='<dl>';
-    a += '<dt><i class="fa fa-minus-square faleft"  opt="status"></i>状态：</dt>';
+    a += '<dt><i class="fa fa-minus-square faleft"  opt="status"></i>Status：</dt>';
     a += '<dd>';
     a += '<select id="orderstatus">';
-    a += '<option value="1">已签到</option>';
-    a += '<option value="0">未签到</option>';
+    a += '<option value="1">Processed</option>';
+    a += '<option value="0">Unprocessed</option>';
     a += '</select>';
     a += '</dd>';
     a += '</dl>';
@@ -136,18 +136,18 @@ var adminlist = {
         a += '<th>'+data[i]["name"]+'</th>';
         a += '<th>'+data[i]["surname"]+'</th>';
         if(data[i]["title"] == "1")
-          b = "先生";
+          b = "Sir";
         if(data[i]["title"] == "2")
-            b = "女士";
+            b = "Ms";
         if(data[i]["title"] == "3")
-            b = "小姐";
+            b = "Miss";
         a += '<th>'+b+'</th>';
         a += '<th>'+data[i]["telphone"]+'</th>';
         a += '<th>'+data[i]["email"]+'</th>';
         if(data[i]["callway"] == "1")
-          c = "电话联系";
+          c = "Telephone";
         if(data[i]["callway"] == "2")
-          c = "邮箱联系";
+          c = "Email";
         a += '<th>'+c+'</th>';
         if(data[i]["storeid"] == "1")
           e = "阿莱亚MOUSSY店";
@@ -155,16 +155,16 @@ var adminlist = {
           e = "阿莱亚MARIGNAN店";
         a += '<th>'+e+'</th>';
         a += '<th>'+data[i]["country"]+'</th>';
-        if(data[i]["sguide"] = '1')
-          d = "需要中文导购";
-        if(data[i]["sguide"] = '0')
-          d = "不需要中文导购";
+        if(data[i]["sguide"] == '1')
+          d = "Need";
+        if(data[i]["sguide"] == '0')
+          d = "Not Need";
         a += '<th>'+d+'</th>';
         a += '<th>'+data[i]["bespeaktime"]+'</th>';
         if(data[i]["status"] != '0'){
-          a += '<th>已签到</th>';
+          a += '<th>Processed</th>';
         }else{
-          a += '<th><button class="btn-blue logbt">签到</button></th>';
+          a += '<th><button class="btn-blue logbt">Process</button></th>';
         }
         a += '</tr>';
     }
@@ -265,7 +265,7 @@ var adminlist = {
       $(".dataoption").append(opt);
       return true;
     }
-    html.tips("该属性已经添加");
+    html.tips("This option already added!!!");
   },
   deloption:function(obj){
     var self = this;
@@ -288,7 +288,7 @@ var adminlist = {
     for(var i=0 ;i<a ;i++){
       var b = self.trim($("#order"+self.orderlist[i]).val());
       if(b.length == 0){
-        html.tips("请不要输入空白项");
+        html.tips("Please check your input!!!");
         return true;
       }
       subdata[self.orderlist[i]] = b;
@@ -325,7 +325,7 @@ var adminlist = {
           return true;
         }
         html.closepop2();
-        html.tips("请检查搜索字段");
+        html.tips("Please check your input!!!");
       }
     });
   },
@@ -347,12 +347,12 @@ var adminlist = {
         if(data == '12'){
           adminlist.changepage();
           html.closepop2();
-          html.tips("签到成功");
+          html.tips("Update Success");
           return true;
         }
         adminlist.changepage();
         html.closepop2();
-        html.tips("修改失败");
+        html.tips("Update error");
       }
     });
   },
@@ -371,13 +371,25 @@ var adminlist = {
         }
         if(data != '11'){
           adminlist.count = Math.ceil(parseInt(data['count'])/parseInt($("#everypage").val()));
-          $("#sumtotal").text("TOTLE:"+adminlist.count);
+          $("#sumtotal").text("TOTLE:"+parseInt(data['count']));
           html.closepop2();
           self.ajaxsend(self.submitsearch() ,1 ,$("#everypage").val());
           return true;
         }
         html.closepop2();
-        html.tips("请检查字段");
+        html.tips("Please check your input!!!");
+      }
+    });
+  },
+  logout:function(){
+    html.pagehold();
+    $.ajax({
+      url:"/site/logout",
+      dataType:"json",
+      type:"POST",
+      success:function(data){
+          window.location.reload();
+          return true;
       }
     });
   },
@@ -391,6 +403,9 @@ var adminlist = {
     });
     $("#searchbt").click(function(){
       self.opsearch();
+    });
+    $("#logout").click(function(){
+      self.logout();
     });
     $(".bespeaklist").on("click" ,"tbody .logbt" ,function(){
       var id = $(this).parent().parent().attr("sid");

@@ -44,6 +44,11 @@ class SiteController extends Controller
 
 	public function actionGuest()
 	{
+		$session = new Session();
+		if($session->has('loguser')){
+			$this->redirect('/site/list');
+			Yii::app()->end();
+		}
 		$xss = new forbidXss();
 		$this->renderPartial('guest',array('xsscode' => $xss->addXsscode()));
 	}
@@ -81,6 +86,13 @@ class SiteController extends Controller
 			Yii::app()->end();
 		}
 		echo json_encode('4');/*not login*/
+		Yii::app()->end();
+	}
+
+	public function actionLogout(){
+		$session = new Session();
+		$session->clean();
+		echo json_encode('11');/*login out*/
 		Yii::app()->end();
 	}
 

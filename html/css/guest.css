@@ -268,3 +268,13 @@ input:focus{
     color:rgba(0, 153, 204, 1);
     margin-top:30%;
 }
+
+#logout{
+  color:red;
+  cursor: pointer;
+  float:right;
+}
+
+#logout:hover{
+  text-decoration: underline;
+}

@@ -9259,3 +9259,46 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/html/js/jquery.min.map
 ---
+2016/02/26 15:59:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/02/26 16:00:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/02/26 16:01:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/02/26 16:12:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/02/26 17:53:15 [error] [php] Undefined variable: session (/vagrant/sha-alaia/protected/controllers/SiteController.php:47)
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CController.php(286): SiteController->runAction()
+#1 /vagrant/sha-alaia/protected/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /vagrant/sha-alaia/index.php(14): CWebApplication->run()
+REQUEST_URI=/site/guest
+in /vagrant/sha-alaia/protected/controllers/SiteController.php (47)
+in /vagrant/sha-alaia/index.php (14)

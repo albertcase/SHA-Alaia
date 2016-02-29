@@ -41,7 +41,7 @@ class bespeakadmin
     );
     if(!$keys = $this->request->comfirmKeys($data))
       return '11'; /*data formate error*/
-    if($this->sql->Sqlupdate('alaia_bespeak',array('status'=>'1'),'id=:id',array(':id' => $keys['id']))){
+    if($this->sql->Sqlupdate('alaia_bespeak',array('status'=>'1' ,'endtime'=> date('Y-m-d H:i:s' ,strtotime("now"))),'id=:id',array(':id' => $keys['id']))){
       return '12'; /*data instart success*/
     }
     return '13';/*data insert error*/
