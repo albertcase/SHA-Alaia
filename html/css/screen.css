@@ -64,12 +64,12 @@ body {
 
 @media screen and (max-width: 413px) {
   html {
-    font-size: 54px;
+    font-size: 50px;
   }
 }
 @media screen and (max-width: 768px) and (min-width: 414px) {
   html {
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 body {
