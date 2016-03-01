@@ -26,6 +26,9 @@ class bespeakApi
     if(!$keys = $this->request->comfirmKeys($data))
       return '11'; /*data formate error*/
     if($result = $this->sql->insertData($keys ,'alaia_bespeak')){
+      $mails = new sendMail();
+      $mails->addmail($mails->buildemil($keys));
+      // exec("nohup ".dirname(__FILE__)."/sh/sendmail.sh >> null 2>&1 &");
       return '12'; /*data instart success*/
     }
     return '13';/*data insert error*/

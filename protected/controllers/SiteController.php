@@ -97,8 +97,16 @@ class SiteController extends Controller
 	}
 
 	public function actionApi2(){
-		$bespeakadmin = new bespeakadmin();
-		echo json_encode($bespeakadmin->getpage());
+		// Yii::app()->mymail->test();
+		// Yii::app()->mymail;
+			$send = new sendMail();
+			// $mem = new memcaches();
+			// $mem->addData('123456789',$datain);
+			// $send->addmail($datain);
+			// $send->buildemil()
+			// echo exec("nohup /vagrant/sha-alaia/protected/models/sh/sendmail.sh");
+			// echo exec("nohup php /vagrant/sha-alaia/protected/models/sh/sendemail.php &");
+		echo json_encode('14');
 		Yii::app()->end();
 	}
 

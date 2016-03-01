@@ -1,0 +1,29 @@
+websocket begin runing
+PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+Could not open input file: ./sendemail.php
+websocket begin runing
+PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+Could not open input file: ./sendemail.php
+websocket begin runing
+PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+Could not open input file: ./sendemail.php
+websocket begin runing
+PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+PHP Warning:  require_once(../memcaches.php): failed to open stream: No such file or directory in /vagrant/sha-alaia/protected/models/sh/sendemail.php on line 2
+PHP Fatal error:  require_once(): Failed opening required '../memcaches.php' (include_path='.:/usr/share/php:/usr/share/pear') in /vagrant/sha-alaia/protected/models/sh/sendemail.php on line 2
+websocket begin runing
+PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+PHP Warning:  require_once(../memcaches.php): failed to open stream: No such file or directory in /vagrant/sha-alaia/protected/models/sh/sendemail.php on line 2
+PHP Fatal error:  require_once(): Failed opening required '../memcaches.php' (include_path='.:/usr/share/php:/usr/share/pear') in /vagrant/sha-alaia/protected/models/sh/sendemail.php on line 2
+websocket begin runing
+PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+PHP Warning:  require_once(../memcaches.php): failed to open stream: No such file or directory in /vagrant/sha-alaia/protected/models/sh/sendemail.php on line 2
+PHP Fatal error:  require_once(): Failed opening required '../memcaches.php' (include_path='.:/usr/share/php:/usr/share/pear') in /vagrant/sha-alaia/protected/models/sh/sendemail.php on line 2
+websocket begin runing
+PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+PHP Warning:  require_once(../memcaches.php): failed to open stream: No such file or directory in /vagrant/sha-alaia/protected/models/sh/sendemail.php on line 2
+PHP Fatal error:  require_once(): Failed opening required '../memcaches.php' (include_path='.:/usr/share/php:/usr/share/pear') in /vagrant/sha-alaia/protected/models/sh/sendemail.php on line 2
+websocket begin runing
+PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+PHP Warning:  require_once(../memcaches.php): failed to open stream: No such file or directory in /vagrant/sha-alaia/protected/models/sh/sendemail.php on line 2
+PHP Fatal error:  require_once(): Failed opening required '../memcaches.php' (include_path='.:/usr/share/php:/usr/share/pear') in /vagrant/sha-alaia/protected/models/sh/sendemail.php on line 2

@@ -42,9 +42,6 @@ return array(
 		'mailer' => array(
 				'class' => 'ext.mailer.htmlMimeMail5',
 		),
-		'strTest' => array(
-				'class' => 'application.models.strTest',
-		),
 		'mail' => array(
                 'class' => 'ext.yii-mail.YiiMail',
                 'transportType'=>'smtp',
