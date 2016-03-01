@@ -48,7 +48,7 @@ class sendMail
     if($data['storeid'] == '2')
       $data['storeid'] = '阿莱亚MARIGNAN店';
     if($data['sguide'] == '0')
-      $data['sguide'] = 'Not Need';
+      $data['sguide'] = 'No Need';
     if($data['sguide'] == '1')
       $data['sguide'] = 'Need';
     if($data['callway'] == '1')

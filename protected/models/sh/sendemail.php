@@ -1,7 +1,7 @@
 <?php
-require_once '../memcaches.php';
-require_once './mailer/swiftmailer/lib/swift_required.php';
-require_once './mailer/swiftmailer/SwiftMailer.php';
+require_once dirname(__FILE__).'/memcaches.php';
+require_once dirname(__FILE__).'/mailer/swiftmailer/lib/swift_required.php';
+require_once dirname(__FILE__).'/mailer/swiftmailer/SwiftMailer.php';
 
 class mails{
   private $prostr = 'mails:';
@@ -53,13 +53,8 @@ class mails{
     }
   }
 }
-
-while(true){
-  $mail = new mails();
+$mail = new mails();
   while($mail->ststus())
   {
     $mail->pushmails();
   }
-  unset($mail);
-  sleep(2);
-}

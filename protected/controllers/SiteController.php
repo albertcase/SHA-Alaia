@@ -97,48 +97,14 @@ class SiteController extends Controller
 	}
 
 	public function actionApi2(){
-		// Yii::app()->mymail->test();
-		// Yii::app()->mymail;
-			$send = new sendMail();
-			// $mem = new memcaches();
-			// $mem->addData('123456789',$datain);
-			// $send->addmail($datain);
-			// $send->buildemil()
 			// echo exec("nohup /vagrant/sha-alaia/protected/models/sh/sendmail.sh");
-			// echo exec("nohup php /vagrant/sha-alaia/protected/models/sh/sendemail.php &");
+		echo exec("nohup /vagrant/sha-alaia/protected/models/sh/sendmail.sh >> null.txt 2>&1 &");
+			// exec("nohup ".dirname(__FILE__)."/sendmail.sh >> null 2>&1 &");
 		echo json_encode('14');
 		Yii::app()->end();
 	}
 
 	public function actionApi3(){
-		// $xss = new forbidXss($_POST['xsscode']);
-		$sql = new database();
-		$str = new strTest();
-		// $data = array(
-		// 	'name' => 'dirk',
-		// 	'surname' => 'wang',
-		// 	'title' => '1',
-		// 	'telphone' => '18516180508',
-		// 	'email' => '757867658@qq.com',
-		// 	'country' => '法国',
-		// 	'storeid' => '1',
-		// 	'callway' => '1',
-		// 	'sguide' => '0',
-		// 	'bespeaktime' => '2015-8-8'
-		// );
-		// $data = array(
-		// 	'name' => 'dirk' ,
-		// 	'surname' => 'wang' ,
-		// 	'title' => '1'
-		// 	);
-		// print_r($sql->insertData(array() ,'alaia_bespeak'));
-		// print_r($sql->searchData(array(),array('id'),'same_getlog' ,3 ,1 ,'id desc'));
-		// print_r($sql->checkData(array(),'alaia_bespeak'));
-		// $sql->getcount('same_getlog');
-		// echo json_encode($sql->getpage(1 ,3 ,array() ,array('id') ,'same_getlog' ));
-		// echo json_encode($str->number('-123'));
-		echo json_encode($sql->getcount('alaia_bespeak' ,array('name'=>'jjjj53')));
-		// echo json_encode($sql->Sqlupdate('alaia_bespeak',array('status'=>'1'),'id=:id',array(':id' => '21')));getcount
 		Yii::app()->end();
 	}
 

@@ -5,6 +5,7 @@ then
 	echo 'this service already runing';
 	exit;
 fi
-php ./sendemail.php >> ws.log 2>&1 &
-echo 'websocket begin runing'
-exit;
+php ~+/protected/models/sh/sendemail.php &
+# echo 'websocket begin runing'
+# echo ~+/protected/models/sh/;
+# exit;
