@@ -59,16 +59,16 @@ class sendMail
       '<html>'.
       ' <head></head>'.
       ' <body>'.
-      'First Name:'.$data['name'].'<br>'.
-      'Family Nnme:'.$data['surname'].'<br>'.
-      'Title:'.$data['title'].'<br>'.
-      'Phone No.:'.$data['telphone'].'<br>'.
-      'Email Address:'.$data['email'].'<br>'.
-      'Preferred way to contact:'.$data['callway'].'<br>'.
-      'Store:country:'.$data['country'].'<br>'.
-      'Store:'.$data['storeid'].'<br>'.
-      'Chinese Guide:'.$data['sguide'].'<br>'.
-      'appointment Date:'.$data['bespeaktime'].'<br>'.
+      '<span style="color:#090">First Name:</span>&nbsp;'.$data['name'].'<br>'.
+      '<span style="color:#090">Family Nnme:</span>&nbsp;'.$data['surname'].'<br>'.
+      '<span style="color:#090">Title:</span>&nbsp;'.$data['title'].'<br>'.
+      '<span style="color:#090">Phone No.:</span>&nbsp;'.$data['telphone'].'<br>'.
+      '<span style="color:#090">Email Address:</span>&nbsp;'.$data['email'].'<br>'.
+      '<span style="color:#090">Preferred way to contact:</span>&nbsp;'.$data['callway'].'<br>'.
+      '<span style="color:#090">Store:country:</span>&nbsp;'.$data['country'].'<br>'.
+      '<span style="color:#090">Store:</span>&nbsp;'.$data['storeid'].'<br>'.
+      '<span style="color:#090">Chinese Guide:</span>&nbsp;'.$data['sguide'].'<br>'.
+      '<span style="color:#090">appointment Date:</span>&nbsp;'.$data['bespeaktime'].'<br>'.
       ' </body>'.
       '</html>';
       return $body;

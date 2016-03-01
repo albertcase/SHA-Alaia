@@ -9335,16 +9335,35 @@ Stack trace:
 REQUEST_URI=/site/guest
 in /vagrant/sha-alaia/protected/controllers/SiteController.php (47)
 in /vagrant/sha-alaia/index.php (14)
+<<<<<<< Updated upstream
 =======
 =======
 >>>>>>> Stashed changes
 =======
+>>>>>>> Stashed changes
+=======
+2016/03/01 15:04:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /vagrant/sha-alaia/protected/framework/db/CDbConnection.php:381
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /vagrant/sha-alaia/protected/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /vagrant/sha-alaia/protected/framework/base/CModule.php(387): CDbConnection->init()
+#3 /vagrant/sha-alaia/protected/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /vagrant/sha-alaia/protected/models/database.php(8): CModule->__get('db')
+#5 /vagrant/sha-alaia/protected/models/bespeakApi.php(9): database->__construct()
+#6 /vagrant/sha-alaia/protected/controllers/SiteController.php(67): bespeakApi->__construct()
+#7 [internal function]: SiteController->actionApi('alaialogin', '6c00f60c35590cd...')
+#8 /vagrant/sha-alaia/protected/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#9 /vagrant/sha-alaia/protected/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#10 /vagrant/sha-alaia/protected/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /vagrant/sha-alaia/protected/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /vagrant/sha-alaia/protected/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
 >>>>>>> Stashed changes
 #13 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(282): CController->run('api')
 #14 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('site/api/action...')
 #15 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
 #16 /vagrant/sha-alaia/index.php(14): CApplication->run()
 #17 {main}
+<<<<<<< Updated upstream
 REQUEST_URI=/site/api/action/alaialogin/xsscode/e746cb0e3eed1318ff6b4cde7c6e931e
 HTTP_REFERER=http://alaia.dirc.com:8112/site/guest
 ---
@@ -10052,6 +10071,12 @@ Stack trace:
 REQUEST_URI=/html/js/jquery.min.map
 ---
 2016/03/01 16:42:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+=======
+REQUEST_URI=/site/api/action/alaialogin/xsscode/6c00f60c35590cd3a46b6e214e637790
+HTTP_REFERER=http://alaia.dirc.com:8112/site/guest
+---
+2016/03/01 17:55:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+>>>>>>> Stashed changes
 Stack trace:
 #0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
 #1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
@@ -10059,7 +10084,153 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/html/js/jquery.min.map
 ---
+<<<<<<< Updated upstream
 2016/03/01 17:08:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+=======
+2016/03/01 17:55:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+>>>>>>> Stashed changes
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/01 18:05:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/01 18:08:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/01 18:17:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/01 18:19:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/01 18:22:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/01 18:25:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/01 18:26:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/01 18:31:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/01 18:32:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/01 18:36:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /vagrant/sha-alaia/protected/framework/db/CDbConnection.php:381
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /vagrant/sha-alaia/protected/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /vagrant/sha-alaia/protected/framework/base/CModule.php(387): CDbConnection->init()
+#3 /vagrant/sha-alaia/protected/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /vagrant/sha-alaia/protected/models/database.php(8): CModule->__get('db')
+#5 /vagrant/sha-alaia/protected/models/bespeakApi.php(9): database->__construct()
+#6 /vagrant/sha-alaia/protected/controllers/SiteController.php(67): bespeakApi->__construct()
+#7 [internal function]: SiteController->actionApi('addbespeak', '50f7f7cb22e6f47...')
+#8 /vagrant/sha-alaia/protected/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#9 /vagrant/sha-alaia/protected/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#10 /vagrant/sha-alaia/protected/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /vagrant/sha-alaia/protected/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /vagrant/sha-alaia/protected/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(282): CController->run('api')
+#14 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('site/api/action...')
+#15 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/site/api/action/addbespeak/xsscode/50f7f7cb22e6f471ee80f7d5a18d93bd
+HTTP_REFERER=http://alaia.dirc.com:8112/site/reservation/
+---
+2016/03/01 18:36:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/01 18:36:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /vagrant/sha-alaia/protected/framework/db/CDbConnection.php:381
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /vagrant/sha-alaia/protected/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /vagrant/sha-alaia/protected/framework/base/CModule.php(387): CDbConnection->init()
+#3 /vagrant/sha-alaia/protected/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /vagrant/sha-alaia/protected/models/database.php(8): CModule->__get('db')
+#5 /vagrant/sha-alaia/protected/models/bespeakApi.php(9): database->__construct()
+#6 /vagrant/sha-alaia/protected/controllers/SiteController.php(67): bespeakApi->__construct()
+#7 [internal function]: SiteController->actionApi('addbespeak', 'fd1bcabb7da12aa...')
+#8 /vagrant/sha-alaia/protected/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#9 /vagrant/sha-alaia/protected/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#10 /vagrant/sha-alaia/protected/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /vagrant/sha-alaia/protected/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /vagrant/sha-alaia/protected/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(282): CController->run('api')
+#14 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('site/api/action...')
+#15 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/site/api/action/addbespeak/xsscode/fd1bcabb7da12aabe741147bccfd6f6e
+HTTP_REFERER=http://alaia.dirc.com:8112/site/reservation/
+---
+2016/03/01 18:36:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/01 18:37:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
 Stack trace:
 #0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
 #1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()

@@ -53,11 +53,13 @@ class mails{
     }
   }
 }
-$mail = new mails();
+
 while(true){
+  $mail = new mails();
   while($mail->ststus())
   {
     $mail->pushmails();
   }
+  unset($mail);
   sleep(2);
 }

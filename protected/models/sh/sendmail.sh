@@ -5,6 +5,6 @@ then
 	echo 'this service already runing';
 	exit;
 fi
-nohup php ./sendemail.php &
+php ./sendemail.php >> ws.log 2>&1 &
 echo 'websocket begin runing'
 exit;
