@@ -18,9 +18,18 @@ $(document).ready(function(){
 //    select
 //    reset all the select value
     $('select').val('');
-    $('select').on('change',function(e){
+    $('.select-box label').on('click',function(){
+        $(this).parent().find('select')[0].selectedIndex = 0;
         $(this).parent().addClass('selected');
-
+        if($(this).next().hasClass('select-store')){
+            if($(this).next().val()=='1'){
+                $('.input-box-ischinese').addClass('hide');
+            }else{
+                $('.input-box-ischinese').removeClass('hide');
+            }
+        }
+    });
+    $('select').on('change',function(e){
         if($(this).hasClass('select-store')){
             if($(this).val()=='1'){
                 $('.input-box-ischinese').addClass('hide');
