@@ -45,7 +45,7 @@
         <div>
         </div>
       <div>
-        <table border="0"  class="bespeaklist">
+        <table border="1"  class="bespeaklist">
           <thead>
             <tr>
               <th>No.</th>

@@ -62,7 +62,7 @@
             <div class="input-box input-box-country select-box">
                 <label for="country">国家</label>
                 <select name="country" id="country">
-                    <option value="法国">法国</option>
+                    <option value="France">法国</option>
                 </select>
             </div>
             <div class="input-box input-box-store select-box">
