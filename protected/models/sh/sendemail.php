@@ -11,8 +11,8 @@ class mails{
   private $list = 'list:';
   private $smtp = 'smtp.exmail.qq.com';
   private $port = '25';
-  private $user = 'dirk.wang@samesamechina.com';
-  private $password = 'same2015';
+  private $user = 'alaia@samesamechina.com';
+  private $password = 'Same2016';
   private $mailer;
   private $mails = array();
   private $SwiftMailer;

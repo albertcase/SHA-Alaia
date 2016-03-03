@@ -10,7 +10,7 @@ class sendMail
   private $count = 'count';
   private $now = 'now';
   private $list = 'list:';
-  private $from = array('dirk.wang@samesamechina.com' => 'dirk');
+  private $from = array('alaia@samesamechina.com' => 'Alaia');
   private $to = array('dirk.wang@samesamechina.com'=>'DIRC');
 
   public function __construct(){
