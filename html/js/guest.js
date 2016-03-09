@@ -9,6 +9,10 @@ var popbox={
         user: $("#logname").val(),
         password: $("#logpassword").val()
       },
+      error: function(jqXHR, textStatus, errorMsg){
+        html.closepop2();
+        html.tips("Request Error");
+      },
       success:function(data){
         if(data == '14'){
             window.location.href='/site/list/';
@@ -313,6 +317,10 @@ var adminlist = {
       dataType:"json",
       type:"POST",
       data:subdata,
+      error: function(jqXHR, textStatus, errorMsg){
+        html.closepop2();
+        html.tips("Request Error");
+      },
       success:function(data){
         if(data == '4'){
           window.location.reload();
@@ -339,6 +347,10 @@ var adminlist = {
       dataType:"json",
       type:"POST",
       data:{id: sid},
+      error: function(jqXHR, textStatus, errorMsg){
+        html.closepop2();
+        html.tips("Request Error");
+      },
       success:function(data){
         if(data == '4'){
           window.location.reload();
@@ -364,6 +376,10 @@ var adminlist = {
       dataType:"json",
       type:"POST",
       data:subdata,
+      error: function(jqXHR, textStatus, errorMsg){
+        html.closepop2();
+        html.tips("Request Error");
+      },
       success:function(data){
         if(data == '4'){
           window.location.reload();
@@ -387,6 +403,10 @@ var adminlist = {
       url:"/site/logout",
       dataType:"json",
       type:"POST",
+      error: function(jqXHR, textStatus, errorMsg){
+        html.closepop2();
+        html.tips("Request Error");
+      },
       success:function(data){
           window.location.reload();
           return true;
