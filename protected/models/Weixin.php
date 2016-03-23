@@ -200,7 +200,7 @@ class Weixin{
 
     private function useCustomer($fromUsername, $toUsername){
 			$this->_memcache->addData('oncustomer:'.$fromUsername, '1', '1800');
-			return $this->sendMsgForText($fromUsername, $toUsername, time(), "text", "欢迎使用客服");
+			return $this->sendService($fromUsername, $toUsername);
 		}
 
     private function sceneLog($openid,$type,$ticket)
