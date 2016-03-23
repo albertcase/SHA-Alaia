@@ -9,9 +9,11 @@ class Weixin{
 	private $_db = null;
 	private $_fromUsername = null;
 	private $_toUsername = null;
+	private $_memcache;
 
 	public function __construct()
 	{
+		$this->_memcache = new memcaches();
 		if( $this->_db===null)
 			$this->_db = Yii::app()->db;
 
@@ -50,8 +52,8 @@ class Weixin{
                 		$rsLike=$command->select()->queryAll();
                 		if($rsLike){
                 			$rs=$rsLike;
-                		}else{
-                			return $this->sendService($fromUsername, $toUsername);
+										}else{
+                			return $this->sendMsgtoCustomer($fromUsername, $toUsername);
                 		}
                 	}
                 	if(in_array($rs[0]['content'], $this->_eventKey)){
@@ -69,9 +71,11 @@ class Weixin{
 	                			$data[] = array('title'=>$rs[$i]['title'],'description'=>$rs[$i]['description'],'picUrl'=>$rs[$i]['url']);
 	                		}
 	                		return $this->sendMsgForNews($fromUsername, $toUsername, $time, $data);
-	                	}else{
-	                		return $this->sendService($fromUsername, $toUsername);
-	                	}
+										}else if($rs[0]['msgtype']=='transfer_customer'){
+											$this->useCustomer($fromUsername, $toUsername);
+										}else{
+                			return $this->sendMsgtoCustomer($fromUsername, $toUsername);
+                		}
                 	}
                 	if($rs[0]['msgtype']=='text'){
                 		$rs[0]['content'] = str_replace("{openid}", $fromUsername, $rs[0]['content']);
@@ -185,6 +189,19 @@ class Weixin{
         	exit;
         }
     }
+
+
+    private function sendMsgtoCustomer($fromUsername, $toUsername){
+			if($this->_memcache->getData('oncustomer:'.$fromUsername)){
+				$this->_memcache->addData('oncustomer:'.$fromUsername, '1', '1800');
+				return $this->sendService($fromUsername, $toUsername);
+			}
+		}
+
+    private function useCustomer($fromUsername, $toUsername){
+			$this->_memcache->addData('oncustomer:'.$fromUsername, '1', '1800');
+			return $this->sendMsgForText($fromUsername, $toUsername, time(), "text", "欢迎使用客服");
+		}
 
     private function sceneLog($openid,$type,$ticket)
     {
