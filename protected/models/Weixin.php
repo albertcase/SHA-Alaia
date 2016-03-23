@@ -194,8 +194,7 @@ class Weixin{
     private function sendMsgtoCustomer($fromUsername, $toUsername){
 			if($this->_memcache->getData('oncustomer:'.$fromUsername)){
 				$this->_memcache->addData('oncustomer:'.$fromUsername, '1', '1800');
-				// return $this->sendService($fromUsername, $toUsername);
-				return $this->sendMsgForText($fromUsername, $toUsername, time(), "text", "欢迎使用客服");
+				return $this->sendService($fromUsername, $toUsername);
 			}
 		}
 
