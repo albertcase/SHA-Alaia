@@ -71,16 +71,16 @@ class Weixin{
 	                			$data[] = array('title'=>$rs[$i]['title'],'description'=>$rs[$i]['description'],'picUrl'=>$rs[$i]['url']);
 	                		}
 	                		return $this->sendMsgForNews($fromUsername, $toUsername, $time, $data);
-										}else if($rs[0]['msgtype'] == 'transfer_customer' ){
-											return $this->useCustomer($fromUsername, $toUsername);
 										}else{
                 			return $this->sendMsgtoCustomer($fromUsername, $toUsername);
                 		}
                 	}
                 	if($rs[0]['msgtype']=='text'){
                 		$rs[0]['content'] = str_replace("{openid}", $fromUsername, $rs[0]['content']);
-                		return $this->sendMsgForText($fromUsername, $toUsername, $time, "text", $rs[0]['content']."aaaaa");
-                	}else if($rs[0]['msgtype']=='news'){
+                		return $this->sendMsgForText($fromUsername, $toUsername, $time, "text", $rs[0]['content']);
+                	}else if($rs[0]['msgtype'] == 'transfer_customer' ){
+										return $this->useCustomer($fromUsername, $toUsername);
+									}else if($rs[0]['msgtype']=='news'){
                 		$data = array();
 
                 		for($i=0;$i<count($rs);$i++){
