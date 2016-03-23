@@ -77,7 +77,7 @@ class Weixin{
                 	}
                 	if($rs[0]['msgtype']=='text'){
                 		$rs[0]['content'] = str_replace("{openid}", $fromUsername, $rs[0]['content']);
-                		return $this->sendMsgForText($fromUsername, $toUsername, $time, "text", $rs[0]['content']);
+                		return $this->sendMsgForText($fromUsername, $toUsername, $time, "text", $rs[0]['content']);//connect constoms
                 	}else if($rs[0]['msgtype'] == 'transfer_customer' ){
 										return $this->useCustomer($fromUsername, $toUsername);
 									}else if($rs[0]['msgtype']=='news'){
@@ -194,7 +194,8 @@ class Weixin{
     private function sendMsgtoCustomer($fromUsername, $toUsername){
 			if($this->_memcache->getData('oncustomer:'.$fromUsername)){
 				$this->_memcache->addData('oncustomer:'.$fromUsername, '1', '1800');
-				return $this->sendService($fromUsername, $toUsername);
+				// return $this->sendService($fromUsername, $toUsername);
+				return $this->sendMsgForText($fromUsername, $toUsername, time(), "text", "欢迎使用客服");
 			}
 		}
 
