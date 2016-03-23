@@ -60,7 +60,7 @@ class Weixin{
                 		$sql = "SELECT B.* FROM `same_wmenu` A left join same_wmenu_event B ON A.id=B.mid WHERE A.`eventkey`='".$rs[0]['content']."' ORDER BY id DESC";
 						$rs = $this->_db->createCommand($sql)->select()->queryAll();
 						if($rs[0]['msgtype']=='text'){
-	                		return $this->sendMsgForText($fromUsername, $toUsername, $time, "text", $rs[0]['content']."aaaaa");
+	                		return $this->sendMsgForText($fromUsername, $toUsername, $time, "text", $rs[0]['content']);
 	                	}else if($rs[0]['msgtype']=='news'){
 	                		$data = array();
 
@@ -79,7 +79,7 @@ class Weixin{
                 	}
                 	if($rs[0]['msgtype']=='text'){
                 		$rs[0]['content'] = str_replace("{openid}", $fromUsername, $rs[0]['content']);
-                		return $this->sendMsgForText($fromUsername, $toUsername, $time, "text", $rs[0]['content']);
+                		return $this->sendMsgForText($fromUsername, $toUsername, $time, "text", $rs[0]['content']."aaaaa");
                 	}else if($rs[0]['msgtype']=='news'){
                 		$data = array();
 
