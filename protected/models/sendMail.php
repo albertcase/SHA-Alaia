@@ -11,7 +11,7 @@ class sendMail
   private $now = 'now';
   private $list = 'list:';
   private $from = array('alaia@samesamechina.com' => 'Alaia');
-  private $to = array('dirk.wang@samesamechina.com'=>'DIRC');
+  private $to = array('dirk.wang@samesamechina.com'=>'DIRC','vicky.song@samesamechina.com'=>'Vicky');
 
   public function __construct(){
     $this->mem = new memcaches();
@@ -31,7 +31,7 @@ class sendMail
       'from' => $this->from,
       'to' => $this->to,
       'body' => $this->body($data),
-      'subject' => 'An appointment from :'.$data['name'],
+      'subject' => 'Wechat An appointment from :'.$data['name'],
     );
     return $datain;
   }
