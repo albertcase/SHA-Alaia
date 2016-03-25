@@ -10484,3 +10484,435 @@ Stack trace:
 REQUEST_URI=/system/login/login
 HTTP_REFERER=http://alaia.dirc.com:8112/system/login
 ---
+2016/03/25 17:18:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:19:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:20:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:21:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:21:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:21:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:22:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:22:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:22:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:22:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:22:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:29:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:30:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:30:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:30:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:31:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:31:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:31:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:32:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:32:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:32:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:32:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:33:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:34:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:35:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:35:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:35:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:35:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:36:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:37:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:37:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:37:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:37:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:38:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:38:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:39:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:40:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:44:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:44:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:44:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:44:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:44:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:44:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:45:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:45:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:48:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 17:54:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 18:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 18:04:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 18:07:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
+2016/03/25 18:08:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "html/js/jquery.min.map"。' in /vagrant/sha-alaia/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/sha-alaia/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('html/js/jquery....')
+#1 /vagrant/sha-alaia/protected/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /vagrant/sha-alaia/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/html/js/jquery.min.map
+---
