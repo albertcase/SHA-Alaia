@@ -81,7 +81,7 @@
             </div>
 
             <div class="input-box input-box-date">
-                <h3>日期（按以下格式输入：04022016）</h3>
+                <h3>日期</h3>
                 <input type="date" name="date" class="date"/>
             </div>
 
