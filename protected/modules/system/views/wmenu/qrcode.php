@@ -29,7 +29,7 @@
 								}
 						}'>场景值</th>
 
-			<th data-options='field:"ticket",width:600,formatter:function(value,row){
+			<th data-options='field:"ticket",width:200,formatter:function(value,row){
 								if(!value){
 									return "无";
 								}else{
@@ -42,6 +42,13 @@
 								else
 									return "暂无图片";
 						}'>二维码</th>
+			<th data-options='field:"num",width:200,formatter:function(value,row){
+								if(!value){
+									return "0";
+								}else{
+									return value;
+								}
+						}'>当前扫描该二维码人数</th>
 			
 			
 		</tr>
