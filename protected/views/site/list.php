@@ -7,6 +7,15 @@
     <meta name="msapplication-tap-highlight" content="no">
     <link rel="stylesheet" type="text/css" href="/html/css/guest.css"/>
     <link rel="stylesheet" type="text/css" href="/html/css/font-awesome.min.css"/>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?1257181ffc5c8d308d6d34578b417ee2";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
     <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="/html/js/guest.js"></script>
 </head>
