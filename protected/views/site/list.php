@@ -23,7 +23,7 @@
             <option value="email">Email address.</option>
             <option value="callway">Preferred way to contact</option>
             <option value="storeid">Store name</option>
-            <option value="sguide">Need Chanese Shopping guide</option>
+            <option value="sguide">Need Chinese Shopping guide</option>
             <option value="status">Status</option>
           </select>
           <i class="fa fa-plus-square"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

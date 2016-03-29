@@ -32,7 +32,7 @@ class bespeakadmin
     $one = isset($keys['one'])?$keys['one']:'10';
     unset($keys['numb']);
     unset($keys['one']);
-    return $this->sql->getpage($numb ,$one ,$keys ,array(),'alaia_bespeak' );
+    return $this->sql->Reggetpage($numb ,$one ,$keys ,array(),'alaia_bespeak' );
   }
 
   public function comfirmbespk(){
@@ -63,6 +63,6 @@ class bespeakadmin
       return '11'; /*data formate error*/
     if(!is_array($keys))
       $keys = array();
-    return array('count' => $this->sql->getcount('alaia_bespeak',$keys));
+    return array('count' => $this->sql->Reggetcount('alaia_bespeak',$keys));
   }
 }

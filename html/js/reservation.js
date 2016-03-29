@@ -15,20 +15,21 @@ $(document).ready(function(){
         }
     };
 
-//    select
-//    reset all the select value
-    $('select').val('');
-    $('.select-box label').on('click',function(){
-        $(this).parent().find('select')[0].selectedIndex = 0;
-        $(this).parent().addClass('selected');
-        if($(this).next().hasClass('select-store')){
-            if($(this).next().val()=='1'){
-                $('.input-box-ischinese').addClass('hide');
-            }else{
-                $('.input-box-ischinese').removeClass('hide');
+    $('select').on('click',function(){
+        if($(this).parent().find('label').length){
+            $(this).prev().remove();
+            $(this).parent().addClass('selected');
+            if($(this).hasClass('select-store')){
+                if($(this).val()=='1'){
+                    $('.input-box-ischinese').addClass('hide');
+                }else{
+                    $('.input-box-ischinese').removeClass('hide');
+                }
             }
-        }
+        };
+
     });
+
     $('select').on('change',function(e){
         if($(this).hasClass('select-store')){
             if($(this).val()=='1'){
@@ -120,11 +121,11 @@ $(document).ready(function(){
             errorMsg.add($('.input-email').parent(),'电子邮件不能为空');
             validate = false;
         }else{
-            if(!((/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/).test($('.input-email').val()))){
+            if((/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/).test($('.input-email').val())){
+                errorMsg.remove($('.input-email').parent());
+            }else{
                 errorMsg.add($('.input-email').parent(),'电子邮件格式错误');
                 validate = false;
-            }else{
-                errorMsg.remove($('.input-email').parent());
             }
         }
 
