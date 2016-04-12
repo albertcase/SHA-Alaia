@@ -26,7 +26,6 @@
     <hr>
     <div class="store-address">地址：<?php echo $store['address']?></div>
     <div class="store-phone">电话：<?php echo $store['telphone']?></div>
-    <div class="store-mail">邮箱： <?php echo $store['email']?></div>
     <div class="store-time">营业时间：<?php echo $store['open']?></div>
 </div>
 <div class="store-map">
