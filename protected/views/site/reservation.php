@@ -73,8 +73,8 @@ foreach($countrys as $x=>$x_val)
             <div class="input-box input-box-store select-box">
                 <label for="store">专卖店</label>
                 <select name="store" id="store" class="select-store">
-                    <option value="1">阿莱亚MOUSSY店</option>
-                    <option value="2">阿莱亚MARIGNAN店</option>
+                    <!-- <option value="1">阿莱亚MOUSSY店</option>
+                    <option value="2">阿莱亚MARIGNAN店</option> -->
                 </select>
             </div>
             <div class="input-box input-box-ischinese select-box">
