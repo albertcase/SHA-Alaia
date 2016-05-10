@@ -23,7 +23,7 @@ class sendMail
 
   public function addmail($data){
     $key = $this->mem->incremkey($this->prostr.$this->count);
-    $this->mem->addData($this->prostr.$this->list.$key,json_encode($data));
+    $this->mem->addData($this->prostr.$this->list.$key,json_encode($data), '800');
   }
 
   public function buildemil($data){

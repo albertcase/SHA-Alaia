@@ -25,7 +25,10 @@
     <h3 class="store-name"><?php echo $store['name']?></h3>
     <hr>
     <div class="store-address">地址：<?php echo $store['address']?></div>
-    <div class="store-phone">电话：<?php echo $store['telphone']?></div>
+<?php
+    if($store['telphone'])
+      print '<div class="store-phone">电话：'.$store['telphone'].'</div>';
+?>
     <div class="store-time">营业时间：<?php echo $store['open']?></div>
 </div>
 <div class="store-map">

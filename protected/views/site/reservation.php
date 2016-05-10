@@ -12,6 +12,7 @@
     <script>
       var pagecode = {
           xsscode:"<?php echo $xsscode; ?>",
+          stores:<?php echo $stores; ?>
       }
     </script>
     <script>
@@ -62,7 +63,11 @@
             <div class="input-box input-box-country select-box">
                 <label for="country">国家</label>
                 <select name="country" id="country">
-                    <option value="France">法国</option>
+                  <option>请选择国家</option>
+<?php
+foreach($countrys as $x=>$x_val)
+  print '<option value="'.$x_val.'">'.$x.'</option>';
+?>
                 </select>
             </div>
             <div class="input-box input-box-store select-box">
@@ -90,7 +95,19 @@
             </div>
         </form>
     </div>
-
-
+<script>
+$(function(){
+$("#country").change(function(){
+  var val = $("#country").val();
+  var list = (pagecode.stores.hasOwnProperty(val))?pagecode.stores[val]:[];
+  var len = list.length;
+  var html = '';
+  for( var i=0; i<len; i++){
+    html += '<option value="'+list[i]['id']+'">'+list[i]['name']+'</option>';
+  }
+  $("#store").html(html);
+})
+});
+</script>
 </body>
 </html>

@@ -63,4 +63,35 @@ class bespeakApi
         return '12'; /*data instart success*/
       return '13';/*data insert error*/
   }
+
+  public function getstores(){
+    $out = array();
+    $stores = $this->sql->searchData(array() ,array(), 'same_store');
+    foreach($stores as $x){
+      $name = $this->translate($x['country']);
+      if(!isset($out[$name]))
+        $out[$name] = array();
+      $out[$name][] = array(
+        'name' => $x['name'],
+        'id' => $x['id'],
+      );
+    }
+    return $out;
+  }
+
+  public function translate($in){
+    $lan = $this->countrys();
+    if(isset($lan[$in]))
+      return $lan[$in];
+    return $in;
+  }
+
+  public function countrys(){
+    return array(
+      '中国香港' => 'Hong Kong',
+      '中国大陆' => 'China',
+      '法国' => 'France'
+    );
+  }
+
 }

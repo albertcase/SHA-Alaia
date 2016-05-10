@@ -38,8 +38,13 @@ class SiteController extends Controller
 
 	public function actionReservation()
 	{
+		$bespeakApi = new bespeakApi();
 		$xss = new forbidXss();
-		$this->renderPartial('reservation',array('xsscode' => $xss->addXsscode()));
+		$this->renderPartial('reservation',array(
+			'xsscode' => $xss->addXsscode(),
+			'stores' => json_encode($bespeakApi->getstores(), JSON_UNESCAPED_UNICODE),
+			'countrys' => $bespeakApi->countrys(),
+		));
 	}
 
 	public function actionGuest()
