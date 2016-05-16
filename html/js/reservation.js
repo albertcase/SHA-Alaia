@@ -20,10 +20,10 @@ $(document).ready(function(){
             $(this).prev().remove();
             $(this).parent().addClass('selected');
             if($(this).hasClass('select-store')){
-                if($(this).val()=='1'){
-                    $('.input-box-ischinese').addClass('hide');
-                }else{
+                if($(this).val()=='0'){
                     $('.input-box-ischinese').removeClass('hide');
+                }else{
+                    $('.input-box-ischinese').addClass('hide');
                 }
             }
         };
@@ -32,10 +32,10 @@ $(document).ready(function(){
 
     $('select').on('change',function(e){
         if($(this).hasClass('select-store')){
-            if($(this).val()=='1'){
-                $('.input-box-ischinese').addClass('hide');
-            }else{
+            if($(this).val()=='0'){
                 $('.input-box-ischinese').removeClass('hide');
+            }else{
+                $('.input-box-ischinese').addClass('hide');
             }
         }
     });
