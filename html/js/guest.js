@@ -98,8 +98,11 @@ var adminlist = {
     a += '<dt><i class="fa fa-minus-square faleft" opt="storeid"></i>Store：</dt>';
     a += '<dd>';
     a += '<select id="orderstoreid">';
-    a += '<option value="1">阿莱亚MOUSSY店</option>';
-    a += '<option value="2">阿莱亚MARIGNAN店</option>';
+    for(var x in pagecode.storeid){
+      a += '<option value="'+x+'">'+pagecode.storeid[x]+'</option>';
+    }
+    // a += '<option value="1">阿莱亚MOUSSY店</option>';
+    // a += '<option value="2">阿莱亚MARIGNAN店</option>';
     a += '</select>';
     a += '</dd>';
     a += '</dl>';
