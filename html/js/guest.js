@@ -153,11 +153,11 @@ var adminlist = {
         if(data[i]["callway"] == "2")
           c = "Email";
         a += '<th>'+c+'</th>';
-        if(data[i]["storeid"] == "1")
-          e = "阿莱亚MOUSSY店";
-        if(data[i]["storeid"] == "2")
-          e = "阿莱亚MARIGNAN店";
-        a += '<th>'+e+'</th>';
+        // if(data[i]["storeid"] == "1")
+        //   e = "阿莱亚MOUSSY店";
+        // if(data[i]["storeid"] == "2")
+        //   e = "阿莱亚MARIGNAN店";
+        a += '<th>'+pagecode.storeid[data[i]["storeid"]]+'</th>';
         a += '<th>'+data[i]["country"]+'</th>';
         if(data[i]["sguide"] == '1')
           d = "Need";

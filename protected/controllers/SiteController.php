@@ -60,9 +60,10 @@ class SiteController extends Controller
 
 	public function actionList()
 	{
+		$bespeakApi = new bespeakApi();
 		$session = new Session();
 		if($session->has('loguser')){
-			$this->renderPartial('list');
+			$this->renderPartial('list', array('storeid' => json_encode($bespeakApi->getstoresid(), JSON_UNESCAPED_UNICODE));
 			Yii::app()->end();
 		}
 		$this->redirect('/site/guest');

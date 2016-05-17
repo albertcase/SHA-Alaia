@@ -37,16 +37,15 @@ class sendMail
   }
 
   public function body($data){
+    $bespeakApi = new bespeakApi();
+    $storeids = $bespeakApi->getstoresid();
     if($data['title'] == '1')
       $data['title'] = 'Sir';
     if($data['title'] == '2')
       $data['title'] = 'Ms';
     if($data['title'] == '3')
       $data['title'] = 'Miss';
-    if($data['storeid'] == '1')
-      $data['storeid'] = '阿莱亚MOUSSY店';
-    if($data['storeid'] == '2')
-      $data['storeid'] = '阿莱亚MARIGNAN店';
+    $data['storeid'] = isset($storeids[$data['storeid']])?$storeids[$data['storeid']]:$data['storeid'];
     if($data['sguide'] == '0')
       $data['sguide'] = 'No Need';
     if($data['sguide'] == '1')

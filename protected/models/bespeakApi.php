@@ -79,6 +79,15 @@ class bespeakApi
     return $out;
   }
 
+  public function getstoresid(){
+    $out = array();
+    $stores = $this->sql->searchData(array() ,array(), 'same_store');
+    foreach($stores as $x){
+      $out[$x['id']] = $x['name'];
+    }
+    return $out;
+  }
+
   public function translate($in){
     $lan = $this->countrys();
     if(isset($lan[$in]))
