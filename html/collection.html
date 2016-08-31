@@ -7,6 +7,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" type="text/css" href="css/screen.css?v=1.0"/>
+    <script type="text/javascript" src="js/lib/zepto.min.js"></script>
     <script>
         var _hmt = _hmt || [];
         (function() {
@@ -23,18 +24,31 @@
             当季新品
         </h2>
         <div class="content-collection">
-            <img src="img/collection/collection-1.jpg" alt=""/>
-            <img src="img/collection/collection-2.jpg" alt=""/>
-            <img src="img/collection/collection-3.jpg" alt=""/>
-            <img src="img/collection/collection-4.jpg" alt=""/>
-            <!--<img src="img/collection/collection-5.jpg" alt=""/>-->
-            <img src="img/collection/collection-6.jpg" alt=""/>
-            <img src="img/collection/collection-7.jpg" alt=""/>
-            <img src="img/collection/collection-8.jpg" alt=""/>
-            <img src="img/collection/collection-9.jpg" alt=""/>
-            <img src="img/collection/collection-10.jpg" alt=""/>
-            <img src="img/collection/collection-11.jpg" alt=""/>
+            <!--<img src="img/collection201608/1.jpg" alt=""/>-->
         </div>
     </div>
+
+    <script type="text/javascript">
+        Zepto(document).ready(function($){
+            // append 10 img first
+            for(var i=1;i<10;i++){
+                $('.content-collection').append('<img src="img/collection201608/'+i+'.jpg" alt=""/>');
+            }
+            // scroll
+            var j = i-1;
+            $(window).on('scroll',function(){
+                if($(window).scrollTop()>$(document).height()-$(window).height()*2){
+                    j++;
+                    if(j>64) return;
+                    $('.content-collection').append('<img src="img/collection201608/'+j+'.jpg" alt=""/>');
+
+                }
+
+
+            });
+
+        });
+
+    </script>
 </body>
 </html>
